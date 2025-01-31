@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "sge_jamboree",
+    'name': "stmg_jamboree",
 
     'summary': "Short (1 phrase/line) summary of the module's purpose",
 

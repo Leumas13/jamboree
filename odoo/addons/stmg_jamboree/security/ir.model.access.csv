@@ -1,0 +1,2 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_stmg_jamboree_stmg_jamboree,stmg_jamboree.stmg_jamboree,model_stmg_jamboree_stmg_jamboree,base.group_user,1,1,1,1

@@ -3,9 +3,9 @@
 # from odoo import models, fields, api
 
 
-# class sge_jamboree(models.Model):
-#     _name = 'sge_jamboree.sge_jamboree'
-#     _description = 'sge_jamboree.sge_jamboree'
+# class stmg_jamboree(models.Model):
+#     _name = 'stmg_jamboree.stmg_jamboree'
+#     _description = 'stmg_jamboree.stmg_jamboree'
 
 #     name = fields.Char()
 #     value = fields.Integer()
