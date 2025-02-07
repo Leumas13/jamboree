@@ -1,3 +1,9 @@
 # -*- coding: utf-8 -*-
 
-from . import models
+from . import Entrenamiento
+from . import Empleado
+from . import Jugador
+from . import Sede
+from . import Tutor
+
+
