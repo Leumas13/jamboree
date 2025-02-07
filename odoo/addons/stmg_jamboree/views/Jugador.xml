@@ -1,0 +1,60 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+<!--
+    <record model="ir.ui.view" id="stmg_jamboree.list">
+      <field name="name">stmg_jamboree list</field>
+      <field name="model">stmg_jamboree.stmg_jamboree</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="value"/>
+          <field name="value2"/>
+        </tree>
+      </field>
+    </record>
+-->
+
+    <!-- actions opening views on models -->
+<!--
+    <record model="ir.actions.act_window" id="stmg_jamboree.action_window">
+      <field name="name">stmg_jamboree window</field>
+      <field name="res_model">stmg_jamboree.stmg_jamboree</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+-->
+
+    <!-- server action to the one above -->
+<!--
+    <record model="ir.actions.server" id="stmg_jamboree.action_server">
+      <field name="name">stmg_jamboree server</field>
+      <field name="model_id" ref="model_stmg_jamboree_stmg_jamboree"/>
+      <field name="state">code</field>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": model._name,
+        }
+      </field>
+    </record>
+-->
+
+    <!-- Top menu item -->
+<!--
+    <menuitem name="stmg_jamboree" id="stmg_jamboree.menu_root"/>
+-->
+    <!-- menu categories -->
+<!--
+    <menuitem name="Menu 1" id="stmg_jamboree.menu_1" parent="stmg_jamboree.menu_root"/>
+    <menuitem name="Menu 2" id="stmg_jamboree.menu_2" parent="stmg_jamboree.menu_root"/>
+-->
+    <!-- actions -->
+<!--
+    <menuitem name="List" id="stmg_jamboree.menu_1_list" parent="stmg_jamboree.menu_1"
+              action="stmg_jamboree.action_window"/>
+    <menuitem name="Server to list" id="stmg_jamboree" parent="stmg_jamboree.menu_2"
+              action="stmg_jamboree.action_server"/>
+-->
+  </data>
+</odoo>
