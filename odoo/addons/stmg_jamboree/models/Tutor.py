@@ -4,8 +4,8 @@ class Tutor(models.Model):
     _name = 'stmg_jamboree.tutor'
     _description = 'Tutor'
     
-    name = fields.Char('name')
-    Nombre = fields.Char('Nombre')
+    name = fields.Char('id')
+    nombre = fields.Char('nombre')
     apellidos = fields.Char('apellidos')
     email = fields.Char('email')
     telefono = fields.Integer('telefono')

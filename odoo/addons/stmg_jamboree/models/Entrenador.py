@@ -1,12 +1,12 @@
 from odoo import models, api, fields
 
-class Empleado(models.Model):
-    _name = 'stmg_jamboree.empleado'
-    _description = 'Empleado'
+class Entrenador(models.Model):
+    _name = 'stmg_jamboree.entrenador'
+    _description = 'Entrenador'
     
-    name = fields.Char('name')
+    name = fields.Char('id')
     nombre = fields.Char('nombre')
-    Apellidos = fields.Char('Apellidos')
+    apellidos = fields.Char('apellidos')
     email = fields.Char('email')
     telefono = fields.Integer('telefono')
     #Sede = fields.Many2many('#Sede string='field_name')
