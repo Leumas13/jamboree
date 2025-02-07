@@ -1,0 +1,30 @@
+<odoo>
+  <data>
+   <record id="sge_libreria.categoria_form" model="ir.ui.view">
+    <field name="name">sge_libreria.categoria.form</field>
+    <field name="model">sge_libreria.categoria</field>
+    <field name="arch" type="xml">
+      <form string="">
+        <sheet>
+          <group>
+            <field name="name" />
+            <field name="description" />
+          </group>
+        </sheet>
+      </form>
+    </field>
+   </record>
+
+   <record id="sge_libreria.categoria_tree" model="ir.ui.view"> <!-- solo admite un punto -->
+    <field name="name">sge_libreria.categoria.tree</field>
+    <field name="model">sge_libreria.categoria</field><!-- nombre tecnico del modulo-->
+    <field name="arch" type="xml">
+      <tree string="Categoria">
+        <!--Estructura de la vista, la que se veia en el tema4 de personalizacion-->
+        <field name="name"/>
+        <field name="description"/>
+      </tree>
+    </field>
+   </record>
+  </data>
+</odoo>
