@@ -6,7 +6,7 @@ class Jugador(models.Model):
     _name = 'stmg_jamboree.jugador'
     _description = 'Jugador'
     
-    name = fields.Char('id')
+    name = fields.Char('id', readonly=True)
     nombre = fields.Char('nombre')
     apellidos = fields.Char('apellidos')
     nacimiento = fields.Date('nacimiento')

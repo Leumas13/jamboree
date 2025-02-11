@@ -26,5 +26,23 @@
             <field name="value">40</field>
           </record>
 -->
+
+      <record id="stmg_jamboree_Jugador_1" model="stmg_jamboree.jugador">
+        <field name="name" >1</field>
+        <field name="nombre" >Samuel</field>
+        <field name="apellidos" >Tortosa</field>
+        <field name="nacimiento" type="date">2015-05-14</field>
+        <field name="equipo" >Móstoles CF</field>
+        <field name="objetivos" >Mejorar las faltas</field>
+        <field name="genero" >Masculino</field>
+        <field name="posicion" >Lateral derecho</field>
+        <field name="lateralidad" >Derecha</field>
+        <field name="categoria" >Benjamin</field>
+        <field name="dni" >12345678Z</field>
+        <field name="bono" >Bono10</field>
+        <field name="sesiones">4</field>
+      </record>
+
+
     </data>
 </odoo>
