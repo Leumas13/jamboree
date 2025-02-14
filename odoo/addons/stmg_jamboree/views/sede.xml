@@ -8,7 +8,13 @@
           <sheet>
             <group>
               <field name="name" />
-              <field name="entrenamiento_ids"></field>
+              <field name="ciudad_id" />
+              <field name="entrenamiento_ids">
+                    <tree string="Entrenamiento">
+                      <field name="name"/>
+                      <field name="turno" />
+                    </tree>
+              </field>
             </group>
           </sheet>
         </form>
@@ -21,6 +27,7 @@
       <field name="arch" type="xml">
         <tree string="">
           <field name="name" />
+          <field name="ciudad_id" />
           <field name="entrenamiento_ids"></field>
         </tree>
       </field>

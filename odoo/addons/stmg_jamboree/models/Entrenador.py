@@ -9,5 +9,4 @@ class Entrenador(models.Model):
     apellidos = fields.Char('apellidos')
     email = fields.Char('email')
     telefono = fields.Integer('telefono')
-    #Sede = fields.Many2many('#Sede string='field_name')
     #Entrenamiento = fields.Many2many('#Sede string='field_name')

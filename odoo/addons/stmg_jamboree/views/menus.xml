@@ -6,6 +6,7 @@
             sequence="10"/>
 
 
+            <!-- ///////////////////////////////      ITEMS ACTIONS       ///////////////////////////////  -->
             <!-- accion de ventana-->
             <record id="stmg_jamboree.sede_action" model="ir.actions.act_window">
                 <field name="name">Sede</field>
@@ -17,7 +18,18 @@
                 <field name="context">{}</field>
             </record>
 
+            <record id="stmg_jamboree.entrenamiento_action" model="ir.actions.act_window">
+                <field name="name">Entrenamiento</field>
+                <field name="res_model">stmg_jamboree.entrenamiento</field>
+                <field name="view_mode">tree,form</field>
+                <!-- filtros en datos-->
+                <field name="domain">[]</field>
+                <!--parametros que se pueden recibir-->
+                <field name="context">{}</field>
+            </record>
 
+
+            <!-- ///////////////////////////////      ITEMS MENU       ///////////////////////////////  -->
             <!--si el action tiene un destino es un boton, si no tiene action despliega un submenu-->
             <menuitem
                 id="stmg_jamboree.sede_menu"
@@ -26,6 +38,12 @@
                 parent="stmg_jamboree.root_menu"
                 sequence="10"/>
 
+                <menuitem
+                id="stmg_jamboree.entrenamiento_menu"
+                name="Entrenamiento"
+                action="stmg_jamboree.entrenamiento_action"
+                parent="stmg_jamboree.root_menu"
+                sequence="10"/>
 
     </data>
 </odoo>

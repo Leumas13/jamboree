@@ -6,5 +6,5 @@ class Sede(models.Model):
     
     name = fields.Char('id')
     nombre = fields.Char('nombre')
-    #ciudad
+    ciudad_id = fields.Many2one('res.city', string='Ciudad')
     entrenamiento_ids = fields.One2many('stmg_jamboree.entrenamiento', 'sede_id', string='Entrenamientos')
