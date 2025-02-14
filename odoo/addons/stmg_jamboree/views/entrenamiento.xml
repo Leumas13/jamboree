@@ -10,6 +10,7 @@
               <field name="name" />
               <field name="tipo" />
               <field name="turno" />
+              <field name="sede_id" />
               <!--falta entrenador y jugador-->
             </group>
           </sheet>
@@ -25,6 +26,7 @@
           <field name="name" />
               <field name="tipo" />
               <field name="turno" />
+              <field name="sede_id" />
               <!--falta entrenador y jugador-->
         </tree>
       </field>

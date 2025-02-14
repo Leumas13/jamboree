@@ -5,4 +5,6 @@ class Sede(models.Model):
     _description = 'Sede'
     
     name = fields.Char('id')
-    # entrenamiento = fields.One2many('comodel_name', 'inverse_field_name', string='# entrenamiento
+    nombre = fields.Char('nombre')
+    #ciudad
+    entrenamiento_ids = fields.One2many('stmg_jamboree.entrenamiento', 'sede_id', string='Entrenamientos')
