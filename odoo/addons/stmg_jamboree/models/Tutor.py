@@ -5,9 +5,9 @@ class Tutor(models.Model):
     _description = 'Tutor'
     
     name = fields.Char('id')
-    nombre = fields.Char('nombre')
-    apellidos = fields.Char('apellidos')
-    email = fields.Char('email')
-    telefono = fields.Integer('telefono')
-    dni = fields.Char('dni')
-    # jugador_ids = fields.Many2many('stmg_jamboree.Jugador', string='jugador')
+    nombre = fields.Char('Nombre')
+    apellidos = fields.Char('Apellidos')
+    email = fields.Char('e-mail')
+    telefono = fields.Integer('Telefono')
+    dni = fields.Char('DNI')
+    jugador_ids = fields.Many2many('stmg_jamboree.jugador', string='Jugador',relation='stmg_jamboree_tutor_jugador_rel')

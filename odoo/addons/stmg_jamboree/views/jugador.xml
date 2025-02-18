@@ -20,6 +20,7 @@
               <field name="dni" />
               <field name="bono" />
               <field name="sesiones" />
+              <field name="fotografia" />
             </group>
           </sheet>
         </form>

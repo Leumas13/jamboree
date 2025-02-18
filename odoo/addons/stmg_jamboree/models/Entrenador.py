@@ -5,8 +5,8 @@ class Entrenador(models.Model):
     _description = 'Entrenador'
     
     name = fields.Char('id')
-    nombre = fields.Char('nombre')
-    apellidos = fields.Char('apellidos')
-    email = fields.Char('email')
+    nombre = fields.Char('Nombre')
+    apellidos = fields.Char('Apellidos')
+    email = fields.Char('e-mail')
     telefono = fields.Integer('telefono')
-    #Entrenamiento = fields.Many2many('#Sede string='field_name')
+    Entrenamiento_ids = fields.Many2many('stmg_jamboree.entrenamiento', string='Entrenamientos', relation='stmg_jamboree_entrenamiento_entrenador_rel')

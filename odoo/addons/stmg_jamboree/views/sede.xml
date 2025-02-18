@@ -7,6 +7,7 @@
         <form string="">
           <sheet>
             <group>
+              <field name="fotografia" widget="image" />
               <field name="name" />
               <field name="ciudad_id" />
               <field name="entrenamiento_ids">
@@ -26,6 +27,7 @@
       <field name="model">stmg_jamboree.sede</field>
       <field name="arch" type="xml">
         <tree string="">
+          <field name="fotografia" widget="image"/>
           <field name="name" />
           <field name="ciudad_id" />
           <field name="entrenamiento_ids"></field>
