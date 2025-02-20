@@ -11,7 +11,22 @@
               <field name="tipo" />
               <field name="turno" />
               <field name="sede_id" />
-              <!--falta entrenador y jugador-->
+              <field name="entrenador_ids">
+                <tree string="Entrenadores">
+                  <field name="id" />
+                  <field name="nombre" />
+                  <field name="apellidos" />
+                </tree>
+              </field>
+              <field name="jugador_ids">
+                <tree string="Jugadores">
+                  <field name="fotografia" />
+                  <field name="id" />
+                  <field name="nombre" />
+                  <field name="apellidos" />
+                  <field name="posicion" />
+                </tree>
+              </field>
             </group>
           </sheet>
         </form>
@@ -24,10 +39,8 @@
       <field name="arch" type="xml">
         <tree string="">
           <field name="name" />
-              <field name="tipo" />
-              <field name="turno" />
-              <field name="sede_id" />
-              <!--falta entrenador y jugador-->
+          <field name="tipo" />
+          <field name="turno" />
         </tree>
       </field>
     </record>

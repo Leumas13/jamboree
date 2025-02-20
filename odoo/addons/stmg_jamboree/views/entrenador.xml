@@ -12,6 +12,18 @@
               <field name="apellidos" />
               <field name="email" />
               <field name="telefono" />
+              <field name="entrenamiento_ids">
+                <tree string="Entrenamientos">
+                  <field name="id" />
+                  <field name="sede_id">
+                    <tree string="Sede">
+                      <field name="nombre" />
+                    </tree>
+                  </field>
+                  <field name="tipo" />
+                  <field name="turno" />
+                </tree>
+              </field>
             </group>
           </sheet>
         </form>

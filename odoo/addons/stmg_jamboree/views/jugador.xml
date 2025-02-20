@@ -21,6 +21,18 @@
               <field name="bono" />
               <field name="sesiones" />
               <field name="fotografia" />
+              <field name="entrenamiento_ids">
+                <tree string="Entrenamientos">
+                  <field name="id" />
+                  <field name="tipo" />
+                  <field name="turno" />
+                  <field name="sede_id">
+                    <tree string="Sede">
+                      <field name="nombre" />
+                    </tree>
+                  </field>
+                </tree>
+              </field>
             </group>
           </sheet>
         </form>
@@ -33,18 +45,18 @@
       <field name="arch" type="xml">
         <tree string="">
           <field name="name" />
-              <field name="nombre" />
-              <field name="apellidos" />
-              <field name="nacimiento" />
-              <field name="equipo" />
-              <field name="objetivos" />
-              <field name="genero" />
-              <field name="posicion" />
-              <field name="lateralidad" />
-              <field name="categoria" />
-              <field name="dni" />
-              <field name="bono" />
-              <field name="sesiones" />
+          <field name="nombre" />
+          <field name="apellidos" />
+          <field name="nacimiento" />
+          <field name="equipo" />
+          <field name="objetivos" />
+          <field name="genero" />
+          <field name="posicion" />
+          <field name="lateralidad" />
+          <field name="categoria" />
+          <field name="dni" />
+          <field name="bono" />
+          <field name="sesiones" />
         </tree>
       </field>
     </record>
