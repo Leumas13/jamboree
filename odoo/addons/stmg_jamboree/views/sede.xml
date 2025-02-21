@@ -9,6 +9,7 @@
             <group>
               <field name="fotografia" widget="image" />
               <field name="name" />
+              <field name="nombre" />
               <field name="ciudad_id" />
               <field name="entrenamiento_ids">
                 <tree string="Entrenamiento">
@@ -29,9 +30,36 @@
         <tree string="">
           <field name="fotografia" widget="image" />
           <field name="name" />
+          <field name="nombre" />
           <field name="ciudad_id" />
         </tree>
       </field>
     </record>
+
+    <record id="stmg_jamboree.sede_kanban" model="ir.ui.view">
+      <field name="name">stmg_jamboree.sede.kanban</field>
+      <field name="model">stmg_jamboree.sede</field>
+      <field name="type">kanban</field>
+      <field name="arch" type="xml">
+        <kanban>
+          <templates>
+            <t t-name="kanban-box">
+            <div class="oe_kanban_global_click">
+              <div class="o_kanban_image">
+                <img t-att-src="kanban_image('stmg_jamboree.sede', 'fotografia', record.id.raw_value)" />
+              </div>
+              <div class="oe_kanban_details">
+                <ul>
+                  <li>Nombre: <field name="nombre" /></li>
+                  <li>Entrenamientos: <field name="entrenamiento_ids" /></li>
+                </ul>
+              </div>
+              </div>
+            </t>
+          </templates>
+        </kanban>
+      </field>
+    </record>
+
   </data>
 </odoo>

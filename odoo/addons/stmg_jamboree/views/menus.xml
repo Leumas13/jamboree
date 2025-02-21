@@ -11,7 +11,7 @@
             <record id="stmg_jamboree.sede_action" model="ir.actions.act_window">
                 <field name="name">Sede</field>
                 <field name="res_model">stmg_jamboree.sede</field>
-                <field name="view_mode">tree,form</field>
+                <field name="view_mode">kanban,tree,form</field>
                 <!-- filtros en datos-->
                 <field name="domain">[]</field>
                 <!--parametros que se pueden recibir-->

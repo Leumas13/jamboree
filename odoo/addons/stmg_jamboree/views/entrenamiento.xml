@@ -11,6 +11,7 @@
               <field name="tipo" />
               <field name="turno" />
               <field name="sede_id" />
+              <group>
               <field name="entrenador_ids">
                 <tree string="Entrenadores">
                   <field name="id" />
@@ -27,6 +28,7 @@
                   <field name="posicion" />
                 </tree>
               </field>
+              </group>
             </group>
           </sheet>
         </form>

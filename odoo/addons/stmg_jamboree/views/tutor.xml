@@ -13,6 +13,7 @@
               <field name="email" />
               <field name="telefono" />
               <field name="dni" />
+              <group>
               <field name="jugador_ids">
                 <tree string="Jugadores">
                   <field name="fotografia" />
@@ -21,6 +22,7 @@
                   <field name="apellidos" />
                 </tree>
               </field>
+              </group>
             </group>
           </sheet>
         </form>

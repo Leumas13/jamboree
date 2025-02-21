@@ -12,6 +12,7 @@
               <field name="apellidos" />
               <field name="email" />
               <field name="telefono" />
+              <group>
               <field name="entrenamiento_ids">
                 <tree string="Entrenamientos">
                   <field name="id" />
@@ -24,6 +25,7 @@
                   <field name="turno" />
                 </tree>
               </field>
+              </group>
             </group>
           </sheet>
         </form>
