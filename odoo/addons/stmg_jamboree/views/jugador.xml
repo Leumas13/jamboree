@@ -33,6 +33,11 @@
                   </field>
                 </tree>
               </field>
+              <field name="tutor_ids">
+                    <tree string="Tutores">
+                      <field name="nombre" />
+                    </tree>
+                  </field>
             </group>
           </sheet>
         </form>
