@@ -26,8 +26,7 @@ services:
     ports:
       - "8069:8069"
     tty: true
-    command: -- --dev=reload
-    #odoo --update=stmg_jamboree --load=web --dev=reload
+    command: odoo --update=stmg_jamboree --load=web --dev=reload
     # command: odoo scaffold module_technical_name /mnt/extra-addons
     volumes:
       - ./odoo/addons:/mnt/extra-addons
@@ -50,4 +49,5 @@ services:
       - ./pgadmin4/servers.json:/pgadmin4/servers.json
 volumes:
     pgdata:
-    odoo
+    odoo_log:
+    odoo_data:
