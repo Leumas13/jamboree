@@ -1,19 +1,276 @@
 <odoo>
     <data>
-      <record id="stmg_jamboree_Jugador_1" model="stmg_jamboree.jugador">
-        <field name="name" >1</field>
-        <field name="nombre" >Samuel</field>
-        <field name="apellidos" >Tortosa</field>
-        <field name="nacimiento" type="date">2015-05-14</field>
-        <field name="equipo" >Móstoles CF</field>
-        <field name="objetivos" >Mejorar las faltas</field>
-        <field name="genero" >Masculino</field>
-        <field name="posicion" >Lateral derecho</field>
-        <field name="lateralidad" >Derecha</field>
-        <field name="categoria" >Benjamin</field>
-        <field name="dni" >12345678Z</field>
-        <field name="bono" >Bono10</field>
-        <field name="sesiones">4</field>
-      </record>
+    <!--//////////////// CIUDAD Y SEDE ///////////////////-->
+    <record id="demo_city1" model="res.city">
+        <field name="name">Griñon</field>
+        <field name="country_id" ref="base.es" />
+    </record>
+
+    <record id="stmg_jamboree.sede1" model="stmg_jamboree.sede">
+      <field name="name">1</field>
+      <field name="nombre">Griñon</field>
+      <field name="ciudad_id" ref="demo_city1"/>
+    </record>
+
+    <record id="demo_city2" model="res.city">
+        <field name="name">Móstoles</field>
+        <field name="country_id" ref="base.es" />
+    </record>
+
+    <record id="stmg_jamboree.sede2" model="stmg_jamboree.sede">
+      <field name="name">2</field>
+      <field name="nombre">Móstoles</field>
+      <field name="ciudad_id" ref="demo_city2"/>
+    </record>
+
+
+    <!--//////////////// ENTRENAMIENTOS ///////////////////-->
+
+    <record id="stmg_jamboree.entrenamiento1" model="stmg_jamboree.entrenamiento">
+      <field name="name">1</field>
+      <field name="tipo">Perfeccionamiento</field>
+      <field name="turno">2025-03-12 12:00</field>
+      <field name="sede_id" ref="stmg_jamboree.sede2"/>
+    </record>
+
+    <record id="stmg_jamboree.entrenamiento2" model="stmg_jamboree.entrenamiento">
+      <field name="name">2</field>
+      <field name="tipo">Perfeccionamiento</field>
+      <field name="turno">2025-03-12 14:00</field>
+      <field name="sede_id" ref="stmg_jamboree.sede2"/>
+    </record>
+
+    <record id="stmg_jamboree.entrenamiento3" model="stmg_jamboree.entrenamiento">
+      <field name="name">3</field>
+      <field name="tipo">Personal</field>
+      <field name="turno">2025-03-13 11:00</field>
+      <field name="sede_id" ref="stmg_jamboree.sede2"/>
+    </record>
+
+    <record id="stmg_jamboree.entrenamiento4" model="stmg_jamboree.entrenamiento">
+      <field name="name">4</field>
+      <field name="tipo">Perfeccionamiento</field>
+      <field name="turno">2025-03-14 12:00</field>
+      <field name="sede_id" ref="stmg_jamboree.sede2"/>
+    </record>
+
+       <record id="stmg_jamboree.entrenamiento5" model="stmg_jamboree.entrenamiento">
+      <field name="name">5</field>
+      <field name="tipo">Perfeccionamiento</field>
+      <field name="turno">2025-03-12 12:00</field>
+      <field name="sede_id" ref="stmg_jamboree.sede1"/>
+    </record>
+
+    <record id="stmg_jamboree.entrenamiento6" model="stmg_jamboree.entrenamiento">
+      <field name="name">6</field>
+      <field name="tipo">Perfeccionamiento</field>
+      <field name="turno">2025-03-12 14:00</field>
+      <field name="sede_id" ref="stmg_jamboree.sede1"/>
+    </record>
+
+    <record id="stmg_jamboree.entrenamiento7" model="stmg_jamboree.entrenamiento">
+      <field name="name">7</field>
+      <field name="tipo">Personal</field>
+      <field name="turno">2025-03-13 11:00</field>
+      <field name="sede_id" ref="stmg_jamboree.sede1"/>
+    </record>
+
+    <record id="stmg_jamboree.entrenamiento8" model="stmg_jamboree.entrenamiento">
+      <field name="name">8</field>
+      <field name="tipo">Perfeccionamiento</field>
+      <field name="turno">2025-03-14 12:00</field>
+      <field name="sede_id" ref="stmg_jamboree.sede1"/>
+    </record>
+
+    <record id="stmg_jamboree.entrenamiento9" model="stmg_jamboree.entrenamiento">
+      <field name="name">9</field>
+      <field name="tipo">Personal</field>
+      <field name="turno">2025-03-14 11:00</field>
+      <field name="sede_id" ref="stmg_jamboree.sede1"/>
+    </record>
+
+    <record id="stmg_jamboree.entrenamiento10" model="stmg_jamboree.entrenamiento">
+      <field name="name">10</field>
+      <field name="tipo">Perfeccionamiento</field>
+      <field name="turno">2025-03-14 12:00</field>
+      <field name="sede_id" ref="stmg_jamboree.sede1"/>
+    </record>
+
+
+
+    <!--//////////////// ENTRENADORES ///////////////////-->
+
+    <record id="stmg_jamboree.entrenador1" model="stmg_jamboree.entrenador">
+      <field name="name">1</field>
+      <field name="nombre">Mario</field>
+      <field name="apellidos">Tortosa</field>
+      <field name="email">mtmg@jamboree.com</field>
+      <field name="telefono">666999444</field>
+      <field name="entrenamiento_ids" eval="[
+              Command.link(ref('stmg_jamboree.entrenamiento1')),
+              Command.link(ref('stmg_jamboree.entrenamiento2')),
+              Command.link(ref('stmg_jamboree.entrenamiento3')),
+              Command.link(ref('stmg_jamboree.entrenamiento4')),
+            ]"/>
+    </record>
+
+    <record id="stmg_jamboree.entrenador2" model="stmg_jamboree.entrenador">
+      <field name="name">2</field>
+      <field name="nombre">Carlos</field>
+      <field name="apellidos">García</field>
+      <field name="email">cgm@jamboree.com</field>
+      <field name="telefono">666888777</field>
+      <field name="entrenamiento_ids" eval="[
+              Command.link(ref('stmg_jamboree.entrenamiento5')),
+              Command.link(ref('stmg_jamboree.entrenamiento6')),
+              Command.link(ref('stmg_jamboree.entrenamiento7')),
+              Command.link(ref('stmg_jamboree.entrenamiento8')),
+              Command.link(ref('stmg_jamboree.entrenamiento9')),
+              Command.link(ref('stmg_jamboree.entrenamiento10')),
+            ]"/>
+    </record>
+
+    <record id="stmg_jamboree.entrenador3" model="stmg_jamboree.entrenador">
+      <field name="name">3</field>
+      <field name="nombre">Jaime</field>
+      <field name="apellidos">Moreno</field>
+      <field name="email">jmr@gmail.com</field>
+      <field name="telefono">666777555</field>
+      <field name="entrenamiento_ids" eval="[
+              Command.link(ref('stmg_jamboree.entrenamiento1')),
+              Command.link(ref('stmg_jamboree.entrenamiento4')),
+              Command.link(ref('stmg_jamboree.entrenamiento6')),
+              Command.link(ref('stmg_jamboree.entrenamiento9')),
+            ]"/>
+    </record>
+
+
+    <!--//////////////// JUGADORES ///////////////////-->
+    <record id="stmg_jamboree.jugador1" model="stmg_jamboree.jugador">
+      <field name="name">1</field>
+      <field name="nombre">Elena</field>
+      <field name="apellidos">Arévalo</field>
+      <field name="nacimiento">2014-05-08</field>
+      <field name="equipo">Móstoles CF</field>
+      <field name="objetivos">Mejorar en velocidad y remate</field>
+      <field name="genero">Femenino</field>
+      <field name="posicion">Lateral</field>
+      <field name="lateralidad">Izquierda</field>
+      <field name="categoria">Cadete</field>
+      <field name="dni">53429851R</field>
+      <field name="bono">10 sesiones</field>
+      <field name="sesiones">5</field>
+      <field name="entrenamiento_ids" eval="[
+              Command.link(ref('stmg_jamboree.entrenamiento1')),
+              Command.link(ref('stmg_jamboree.entrenamiento2')),
+              Command.link(ref('stmg_jamboree.entrenamiento4')),
+            ]"/>
+    </record>
+
+    <record id="stmg_jamboree.jugador2" model="stmg_jamboree.jugador">
+      <field name="name">2</field>
+      <field name="nombre">Emma</field>
+      <field name="apellidos">Sabino</field>
+      <field name="nacimiento">2020-03-25</field>
+      <field name="equipo">Alcorcón CF</field>
+      <field name="objetivos">Mejorar en salidas</field>
+      <field name="genero">Femenino</field>
+      <field name="posicion">Portero</field>
+      <field name="lateralidad">Derecha</field>
+      <field name="categoria">Benjamin</field>
+      <field name="entrenamiento_ids" eval="[
+              Command.link(ref('stmg_jamboree.entrenamiento8')),
+              Command.link(ref('stmg_jamboree.entrenamiento10')),
+            ]"/>
+    </record>
+
+    <record id="stmg_jamboree.jugador3" model="stmg_jamboree.jugador">
+      <field name="name">3</field>
+      <field name="nombre">David</field>
+      <field name="apellidos">Moreno</field>
+      <field name="nacimiento">2013-09-01</field>
+      <field name="equipo">Arromolinos CF</field>
+      <field name="objetivos">Mejorar en remate</field>
+      <field name="genero">Masculino</field>
+      <field name="posicion">Central</field>
+      <field name="lateralidad">Derecha</field>
+      <field name="categoria">Cadete</field>
+      <field name="dni">12345678Z</field>
+      <field name="bono">10 sesiones</field>
+      <field name="sesiones">8</field>
+      <field name="entrenamiento_ids" eval="[
+              Command.link(ref('stmg_jamboree.entrenamiento1')),
+              Command.link(ref('stmg_jamboree.entrenamiento2')),
+              Command.link(ref('stmg_jamboree.entrenamiento4')),
+            ]"/>
+    </record>
+
+    <record id="stmg_jamboree.jugador4" model="stmg_jamboree.jugador">
+      <field name="name">4</field>
+      <field name="nombre">Alberto</field>
+      <field name="apellidos">Jiménez</field>
+      <field name="nacimiento">2012-10-09</field>
+      <field name="equipo">Arromolinos CF</field>
+      <field name="objetivos">Mejorar en regate</field>
+      <field name="genero">Masculino</field>
+      <field name="posicion">Interior</field>
+      <field name="lateralidad">Derecha</field>
+      <field name="categoria">Cadete</field>
+      <field name="dni">12345678Z</field>
+      <field name="bono">10 sesiones</field>
+      <field name="sesiones">2</field>
+      <field name="entrenamiento_ids" eval="[
+              Command.link(ref('stmg_jamboree.entrenamiento7')),
+              Command.link(ref('stmg_jamboree.entrenamiento8')),
+              Command.link(ref('stmg_jamboree.entrenamiento9')),
+            ]"/>
+    </record>
+
+    <!--//////////////// TUTORES ///////////////////-->
+    <record id="stmg_jamboree.tutor1" model="stmg_jamboree.tutor">
+      <field name="name">1</field>
+      <field name="nombre">Antonio</field>
+      <field name="apellidos">Gibaja</field>
+      <field name="email">agibaja@gmail.com</field>
+      <field name="telefono">644533422</field>
+      <field name="jugador_ids" eval="[
+              Command.link(ref('stmg_jamboree.jugador1')),
+      ]"/>
+    </record>
+
+    <record id="stmg_jamboree.tutor2" model="stmg_jamboree.tutor">
+      <field name="name">2</field>
+      <field name="nombre">Maria</field>
+      <field name="apellidos">Ayuga</field>
+      <field name="email">mayuga@gmail.com</field>
+      <field name="telefono">644533422</field>
+      <field name="jugador_ids" eval="[
+              Command.link(ref('stmg_jamboree.jugador1')),
+      ]"/>
+    </record>
+
+    <record id="stmg_jamboree.tutor3" model="stmg_jamboree.tutor">
+      <field name="name">3</field>
+      <field name="nombre">Antonio</field>
+      <field name="apellidos">Moreno</field>
+      <field name="email">amoreno@gmail.com</field>
+      <field name="telefono">644533422</field>
+      <field name="jugador_ids" eval="[
+              Command.link(ref('stmg_jamboree.jugador2')),
+      ]"/>
+    </record>
+
+    <record id="stmg_jamboree.tutor4" model="stmg_jamboree.tutor">
+      <field name="name">4</field>
+      <field name="nombre">Tamara</field>
+      <field name="apellidos">Correa</field>
+      <field name="email">tcorrea@gmail.com</field>
+      <field name="telefono">644533422</field>
+      <field name="jugador_ids" eval="[
+              Command.link(ref('stmg_jamboree.jugador3')),
+              Command.link(ref('stmg_jamboree.jugador4')),
+      ]"/>
+    </record>
+
     </data>
 </odoo>
