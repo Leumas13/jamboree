@@ -50,4 +50,5 @@ services:
       - ./pgadmin4/servers.json:/pgadmin4/servers.json
 volumes:
     pgdata:
-    odoo
+    odoo_log:
+    odoo_data:
