@@ -5,7 +5,11 @@ class Entrenamiento(models.Model):
     _description = 'Entrenamiento'
     
     name = fields.Char('id', required=True, index=True)
-    tipo = fields.Char('Tipo')
+    tipo = fields.Selection([
+        ('personal', 'Personal'),
+        ('infantil', 'Infantil'),
+        ('desarrollo', 'Desarrollo'),
+    ], string='Tipo')
     turno = fields.Datetime('Turno')
     sede_id = fields.Many2one('stmg_jamboree.sede', string='Sede')
     entrenador_ids = fields.Many2many('stmg_jamboree.entrenador', string='Entrenador', relation='stmg_jamboree_entrenamiento_entrenador_rel')
