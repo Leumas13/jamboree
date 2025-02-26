@@ -21,7 +21,7 @@
             <record id="stmg_jamboree.entrenamiento_action" model="ir.actions.act_window">
                 <field name="name">Entrenamiento</field>
                 <field name="res_model">stmg_jamboree.entrenamiento</field>
-                <field name="view_mode">kanban,tree,form</field>
+                <field name="view_mode">calendar,kanban,tree,form</field>
                 <!-- filtros en datos-->
                 <field name="domain">[]</field>
                 <!--parametros que se pueden recibir-->
