@@ -65,5 +65,17 @@
         </tree>
       </field>
     </record>
+
+    <record id="stmg_jamboree.jugador_search" model="ir.ui.view">
+      <field name="name">stmg_jamboree.jugador.search</field>
+      <field name="model">stmg_jamboree.jugador</field>
+      <field name="arch" type="xml">
+        <search string="Jugadores">
+          <field name="name" />
+          <field name="nombre" />
+          <field name="apellidos" />
+        </search>
+      </field>
+    </record>
   </data>
 </odoo>

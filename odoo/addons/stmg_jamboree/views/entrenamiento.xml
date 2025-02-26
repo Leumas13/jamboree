@@ -56,7 +56,7 @@
           <field name="name" />
           <field name="turno" />
           <field name="nombre_sede" />
-          <field name="entrenador_ids" />
+          <field name="lista_entrenador" />
 
           <templates>
             <t t-name="kanban-box">
@@ -70,7 +70,8 @@
                         </p>
                       </strong>
                         <p>
-                          Sede: <field name="nombre_sede" />
+                          Sede: <field name="nombre_sede"/>
+                          Entrenadores: <br/><field name="lista_entrenador" />
                         </p>
                     </div>
                   </div>

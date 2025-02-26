@@ -9,3 +9,4 @@ access_stmg_jamboree_jugador_admin,stmg_jamboree.jugador_admin,model_stmg_jambor
 access_stmg_jamboree_entrenador_admin,stmg_jamboree.entrenador_admin,model_stmg_jamboree_entrenador,base.group_erp_manager,1,1,1,1
 access_stmg_jamboree_entrenamiento_admin,stmg_jamboree.entrenamiento_admin,model_stmg_jamboree_entrenamiento,base.group_erp_manager,1,1,1,1
 access_stmg_jamboree_tutor_admin,stmg_jamboree.tutor_admin,model_stmg_jamboree_tutor,base.group_erp_manager,1,1,1,1
+

@@ -51,7 +51,7 @@
                 <div class="oe_kanban_details">
                   <ul>
                     <li>Nombre: <field name="nombre" /></li>
-                    <li>Entrenamientos: <field name="entrenamiento_ids" /></li>
+                    <li>30 dias vista: <field name="entrenamientos_30dias" /> entrenamientos</li>
                   </ul>
                 </div>
               </div>
