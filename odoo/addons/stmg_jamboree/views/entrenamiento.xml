@@ -57,28 +57,34 @@
           <field name="turno" />
           <field name="nombre_sede" />
           <field name="lista_entrenador" />
+          <field name="terminado" />
+          <field name="dias" />
 
-          <templates>
-            <t t-name="kanban-box">
-              <div class="oe_kanban_global_click">
-                <div class="oe_kanban_details">
-                  <div class="o_kanban_record_top">
-                    <div class="o_kanban_record_headings">
-                      <strong class="o_kanban_record_title oe_partener_heading">
-                        <p>
-                          Turno: <field name="turno" />
-                        </p>
-                      </strong>
-                        <p>
-                          Sede: <field name="nombre_sede"/>
-                          Entrenadores: <br/><field name="lista_entrenador" />
-                        </p>
+          
+            <templates>
+              <t t-name="kanban-box">
+              <t t-if="!record.terminado.raw_value">
+                <div class="oe_kanban_global_click">
+                  <div class="oe_kanban_details">
+                    <div class="o_kanban_record_top">
+                      <div class="o_kanban_record_headings">
+                        <strong class="o_kanban_record_title oe_partener_heading">
+                          <p>
+                            Turno: <field name="turno" />
+                          </p>
+                        </strong>
+                          <p>
+                            Sede: <field name="nombre_sede"/><br/>
+                            Entrenadores: <field name="lista_entrenador" />
+                          </p>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            </t>
-          </templates>
+              </t>
+               </t>
+            </templates>
+         
         </kanban>
       </field>
     </record>
