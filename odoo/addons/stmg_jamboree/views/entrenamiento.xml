@@ -59,6 +59,7 @@
           <field name="lista_entrenador" />
           <field name="terminado" />
           <field name="dias" />
+          <field name="entrenador_ids" />
 
           
             <templates>
@@ -76,6 +77,9 @@
                           <p>
                             Sede: <field name="nombre_sede"/><br/>
                             Entrenadores: <field name="lista_entrenador" />
+                            <div>
+                              <field name="entrenador_ids" widget="many2many_tags" options="{'color_field': 'name'}"/>
+                            </div>
                           </p>
                       </div>
                     </div>

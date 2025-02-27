@@ -41,7 +41,7 @@
             <record id="stmg_jamboree.jugador_action" model="ir.actions.act_window">
                 <field name="name">Jugador</field>
                 <field name="res_model">stmg_jamboree.jugador</field>
-                <field name="view_mode">tree,search,form</field>
+                <field name="view_mode">search,tree,form</field>
                 <!-- filtros en datos-->
                 <field name="domain">[]</field>
                 <!--parametros que se pueden recibir-->

@@ -7,7 +7,7 @@
         <form string="">
           <sheet>
             <group>
-              <field name="fotografia" widget="image" />
+              <field name="fotografia" widget="image" options="{'size': [600,300]}"/>
               <field name="name" />
               <field name="nombre" />
               <field name="ciudad_id" />
@@ -28,7 +28,6 @@
       <field name="model">stmg_jamboree.sede</field>
       <field name="arch" type="xml">
         <tree string="">
-          <field name="fotografia" widget="image" />
           <field name="name" />
           <field name="nombre" />
           <field name="ciudad_id" />
@@ -41,11 +40,13 @@
       <field name="model">stmg_jamboree.sede</field>
       <field name="type">kanban</field>
       <field name="arch" type="xml">
+ 
+
         <kanban>
           <templates>
             <t t-name="kanban-box">
               <div class="oe_kanban_global_click">
-                <div class="o_kanban_image">
+                <div class="stmg_imagen_kanban">
                   <img t-att-src="kanban_image('stmg_jamboree.sede', 'fotografia', record.id.raw_value)" />
                 </div>
                 <div class="oe_kanban_details">
