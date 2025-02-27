@@ -7,7 +7,8 @@ class Sede(models.Model):
     
     name = fields.Char('id')
     nombre = fields.Char('Nombre')
-    fotografia = fields.Binary('Fotografia')
+    fotografia = fields.Image('Fotografia')
+    fotografia_mini = fields.Image("Miniatura", related="fotografia", max_width=128, max_height=128)
     ciudad_id = fields.Many2one('res.city', string='Ciudad')
     entrenamiento_ids = fields.One2many('stmg_jamboree.entrenamiento', 'sede_id', string='Entrenamientos')
     

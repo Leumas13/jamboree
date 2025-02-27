@@ -1,45 +1,25 @@
 <odoo>
   <data>
-    <record id="stmg_jamboree.tutor_form" model="ir.ui.view">
-      <field name="name">stmg_jamboree.tutor.form</field>
-      <field name="model">stmg_jamboree.tutor</field>
-      <field name="arch" type="xml">
-        <form string="">
-          <sheet>
-            <group>
-              <field name="name" />
-              <field name="nombre" />
-              <field name="apellidos" />
-              <field name="email" />
-              <field name="telefono" />
-              <field name="dni" />
-              <group>
-              <field name="jugador_ids">
-                <tree string="Jugadores">
-                  <field name="fotografia" />
-                  <field name="id" />
-                  <field name="nombre" />
-                  <field name="apellidos" />
-                </tree>
-              </field>
-              </group>
-            </group>
-          </sheet>
-        </form>
-      </field>
+    <record id="view_tutor_form_inherit" model="ir.ui.view">
+        <field name="name">stmg_jamboree.tutor.form.inherit</field>
+        <field name="model">stmg_jamboree.tutor</field>
+        <field name="inherit_id" ref="base.view_partner_form"/>  <!-- Vista base de res.partner -->
+        <field name="arch" type="xml">
+            <!-- Agregar el campo 'jugador_ids' al formulario de 'tutor' -->
+            <xpath expr="//sheet//group[@name='group_address']" position="after">
+                <group>
+                    <field name="jugador_ids" widget="many2many_tags" options="{'no_create': True}" placeholder="Selecciona los jugadores"/>
+                </group>
+            </xpath>
+        </field>
     </record>
 
-    <record id="stmg_jamboree.tutor_tree" model="ir.ui.view">
-      <field name="name">stmg_jamboree.tutor.tree</field>
+    <record id="view_tutor_tree_inherit" model="ir.ui.view">
+      <field name="name">stmg_jamboree.tutor.tree.inherit</field>
       <field name="model">stmg_jamboree.tutor</field>
       <field name="arch" type="xml">
         <tree string="">
-          <field name="name" />
-              <field name="nombre" />
-              <field name="apellidos" />
-              <field name="email" />
-              <field name="telefono" />
-              <field name="dni" />
+          
         </tree>
       </field>
     </record>

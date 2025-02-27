@@ -1,48 +1,18 @@
 <odoo>
   <data>
     <record id="stmg_jamboree.entrenador_form" model="ir.ui.view">
-      <field name="name">stmg_jamboree.entrenador.form</field>
+      <field name="name">stmg_jamboree.entrenador.form.inherit</field>
       <field name="model">stmg_jamboree.entrenador</field>
       <field name="arch" type="xml">
-        <form string="">
-          <sheet>
-            <group>
-              <field name="name" />
-              <field name="nombre" />
-              <field name="apellidos" />
-              <field name="email" />
-              <field name="telefono" />
-              <group>
-              <field name="entrenamiento_ids">
-                <tree string="Entrenamientos">
-                  <field name="id" />
-                  <field name="sede_id">
-                    <tree string="Sede">
-                      <field name="nombre" />
-                    </tree>
-                  </field>
-                  <field name="tipo" />
-                  <field name="turno" />
-                </tree>
-              </field>
-              </group>
-            </group>
-          </sheet>
-        </form>
+        
       </field>
     </record>
 
     <record id="stmg_jamboree.entrenador_tree" model="ir.ui.view">
-      <field name="name">stmg_jamboree.entrenador.tree</field>
+      <field name="name">stmg_jamboree.entrenador.tree.inherit</field>
       <field name="model">stmg_jamboree.entrenador</field>
       <field name="arch" type="xml">
-        <tree string="">
-          <field name="name" />
-              <field name="nombre" />
-              <field name="apellidos" />
-              <field name="email" />
-              <field name="telefono" />
-        </tree>
+        
       </field>
     </record>
   </data>

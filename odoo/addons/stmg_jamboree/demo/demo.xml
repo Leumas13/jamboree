@@ -10,7 +10,6 @@
       <field name="name">1</field>
       <field name="nombre">Griñon</field>
       <field name="ciudad_id" ref="demo_city1"/>
-      <field name="fotografia" type="base64" file="stmg_jamboree/imgs/sede1.png"/>
     </record>
 
     <record id="demo_city2" model="res.city">

@@ -78,7 +78,7 @@
                             Sede: <field name="nombre_sede"/><br/>
                             Entrenadores: <field name="lista_entrenador" />
                             <div>
-                              <field name="entrenador_ids" widget="many2many_tags" options="{'color_field': 'name'}"/>
+                              <field name="entrenador_ids" widget="many2many__avatar_user"/>
                             </div>
                           </p>
                       </div>
