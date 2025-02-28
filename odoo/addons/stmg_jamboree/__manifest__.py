@@ -2,7 +2,7 @@
 {
     'name': "stmg_jamboree",
 
-    'summary': "Short (1 phrase/line) summary of the module's purpose",
+    'summary': "Escuela de futbol",
 
     'description': """
 Long description of module's purpose
