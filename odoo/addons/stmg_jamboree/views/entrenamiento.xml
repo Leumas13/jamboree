@@ -78,7 +78,7 @@
                             Entrenadores: <field name="lista_entrenador" />
 <<<<<<< HEAD
                             <div>
-                              <field name="entrenador_ids" widget="many2many__avatar_user"/>
+                              <field name="entrenador_ids" widget="many2many_tags" options="{'color_field': 'name'}"/>
                             </div>
 =======
 >>>>>>> 1488a45 (Revert "icono app")

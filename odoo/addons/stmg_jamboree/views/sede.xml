@@ -42,10 +42,10 @@
       <field name="type">kanban</field>
       <field name="arch" type="xml">
         <kanban>
-        <field name="fotografia_mini" widget="image" preview_image="fotografia_mini"/>
           <templates>
             <t t-name="kanban-box">
               <div class="oe_kanban_global_click">
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
               <div class="o_kanban_record_top">
@@ -61,6 +61,10 @@
 >>>>>>> parent of bc5e479 (correccion sede kanban)
                   <img t-att-src="kanban_image('stmg_jamboree.sede', 'fotografia', record.id.raw_value)" />
 >>>>>>> 1488a45 (Revert "icono app")
+=======
+                <div class="o_kanban_image ">
+                  <img t-att-src="kanban_image('stmg_jamboree.sede', 'fotografia', record.id.raw_value)" />
+>>>>>>> parent of 00e18d1 (prueba de herencia sin terminar)
                 </div>
                 <div class="oe_kanban_details">
                   <ul>
