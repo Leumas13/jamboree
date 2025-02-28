@@ -74,6 +74,8 @@
           <field name="name" />
           <field name="nombre" />
           <field name="apellidos" />
+          <filter name="lateralidad" string="Derecha" domain="[('lateralidad', '=', 'derecha')]"/>
+          <filter name="lateralidad" string="Izquierda" domain="[('lateralidad', '=', 'izquierda')]"/>
         </search>
       </field>
     </record>

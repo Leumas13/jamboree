@@ -14,7 +14,10 @@ class Jugador(models.Model):
     objetivos = fields.Char('Objetivos')
     genero = fields.Char('Genero')
     posicion = fields.Char('Posicion')
-    lateralidad = fields.Char('Lateralidad')
+    lateralidad = fields.Selection([
+        ('derecha', 'Derecha'),
+        ('izquierda', 'Izquierda')
+    ], string='Lateralidad')
     categoria = fields.Char('Categoria')
     dni = fields.Char('DNI')
     bono = fields.Char('Bono')
