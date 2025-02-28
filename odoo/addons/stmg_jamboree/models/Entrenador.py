@@ -9,4 +9,5 @@ class Entrenador(models.Model):
     apellidos = fields.Char('Apellidos')
     email = fields.Char('e-mail')
     telefono = fields.Integer('telefono')
+    fotografia = fields.Image('Fotografia')
     entrenamiento_ids = fields.Many2many('stmg_jamboree.entrenamiento', string='Entrenamientos', relation='stmg_jamboree_entrenamiento_entrenador_rel')
