@@ -10,7 +10,7 @@
       <field name="name">1</field>
       <field name="nombre">Griñon</field>
       <field name="ciudad_id" ref="demo_city1"/>
-      <field name="fotografia" type="base64" file="stmg_jamboree/imgs/sede1.png"/>
+      <field name="fotografia" type="base64" file="stmg_jamboree/static/imgs/sede1.png"/>
     </record>
 
     <record id="demo_city2" model="res.city">
@@ -22,6 +22,7 @@
       <field name="name">2</field>
       <field name="nombre">Móstoles</field>
       <field name="ciudad_id" ref="demo_city2"/>
+      <field name="fotografia" type="base64" file="stmg_jamboree/static/imgs/sede2.png"/>
     </record>
 
 
@@ -113,6 +114,7 @@
               Command.link(ref('stmg_jamboree.entrenamiento3')),
               Command.link(ref('stmg_jamboree.entrenamiento4')),
             ]"/>
+      <field name="fotografia" type="base64" file="stmg_jamboree/static/imgs/entrenador1.jpeg"/>
     </record>
 
     <record id="stmg_jamboree.entrenador2" model="stmg_jamboree.entrenador">
@@ -129,6 +131,7 @@
               Command.link(ref('stmg_jamboree.entrenamiento9')),
               Command.link(ref('stmg_jamboree.entrenamiento10')),
             ]"/>
+      <field name="fotografia" type="base64" file="stmg_jamboree/static/imgs/entrenador2.jpeg"/>
     </record>
 
     <record id="stmg_jamboree.entrenador3" model="stmg_jamboree.entrenador">
@@ -143,6 +146,7 @@
               Command.link(ref('stmg_jamboree.entrenamiento6')),
               Command.link(ref('stmg_jamboree.entrenamiento9')),
             ]"/>
+      <field name="fotografia" type="base64" file="stmg_jamboree/static/imgs/entrenador4.jpeg"/>
     </record>
 
 
@@ -156,7 +160,7 @@
       <field name="objetivos">Mejorar en velocidad y remate</field>
       <field name="genero">Femenino</field>
       <field name="posicion">Lateral</field>
-      <field name="lateralidad">Izquierda</field>
+      <field name="lateralidad">izquierda</field>
       <field name="categoria">Cadete</field>
       <field name="dni">53429851R</field>
       <field name="bono">10 sesiones</field>
@@ -177,7 +181,7 @@
       <field name="objetivos">Mejorar en salidas</field>
       <field name="genero">Femenino</field>
       <field name="posicion">Portero</field>
-      <field name="lateralidad">Derecha</field>
+      <field name="lateralidad">derecha</field>
       <field name="categoria">Benjamin</field>
       <field name="entrenamiento_ids" eval="[
               Command.link(ref('stmg_jamboree.entrenamiento8')),
@@ -194,7 +198,7 @@
       <field name="objetivos">Mejorar en remate</field>
       <field name="genero">Masculino</field>
       <field name="posicion">Central</field>
-      <field name="lateralidad">Derecha</field>
+      <field name="lateralidad">derecha</field>
       <field name="categoria">Cadete</field>
       <field name="dni">12345678Z</field>
       <field name="bono">10 sesiones</field>
@@ -215,7 +219,7 @@
       <field name="objetivos">Mejorar en regate</field>
       <field name="genero">Masculino</field>
       <field name="posicion">Interior</field>
-      <field name="lateralidad">Derecha</field>
+      <field name="lateralidad">derecha</field>
       <field name="categoria">Cadete</field>
       <field name="dni">12345678Z</field>
       <field name="bono">10 sesiones</field>
