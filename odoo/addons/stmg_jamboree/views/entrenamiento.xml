@@ -59,7 +59,6 @@
           <field name="lista_entrenador" />
           <field name="terminado" />
           <field name="dias" />
-          <field name="entrenador_ids" />
 
           
             <templates>
@@ -77,9 +76,12 @@
                           <p>
                             Sede: <field name="nombre_sede"/><br/>
                             Entrenadores: <field name="lista_entrenador" />
+<<<<<<< HEAD
                             <div>
                               <field name="entrenador_ids" widget="many2many__avatar_user"/>
                             </div>
+=======
+>>>>>>> 1488a45 (Revert "icono app")
                           </p>
                       </div>
                     </div>

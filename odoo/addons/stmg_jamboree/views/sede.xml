@@ -7,7 +7,7 @@
         <form string="">
           <sheet>
             <group>
-              <field name="fotografia" widget="image" options="{'size': [600,300]}"/>
+              <field name="fotografia" widget="image" />
               <field name="name" />
               <field name="nombre" />
               <field name="ciudad_id" />
@@ -28,6 +28,7 @@
       <field name="model">stmg_jamboree.sede</field>
       <field name="arch" type="xml">
         <tree string="">
+          <field name="fotografia" widget="image" />
           <field name="name" />
           <field name="nombre" />
           <field name="ciudad_id" />
@@ -40,19 +41,22 @@
       <field name="model">stmg_jamboree.sede</field>
       <field name="type">kanban</field>
       <field name="arch" type="xml">
- 
-
         <kanban>
         <field name="fotografia_mini" widget="image" preview_image="fotografia_mini"/>
           <templates>
             <t t-name="kanban-box">
               <div class="oe_kanban_global_click">
+<<<<<<< HEAD
               <div class="o_kanban_record_top">
                       <div class="o_kanban_record_headings">
                 <div class="o_kanban_image ">
                   <img t-att-src="kanban_image('stmg_jamboree.sede', 'fotografia_mini', record.id)" />
                 </div>
                 </div>
+=======
+                <div class="o_kanban_image">
+                  <img t-att-src="kanban_image('stmg_jamboree.sede', 'fotografia', record.id.raw_value)" />
+>>>>>>> 1488a45 (Revert "icono app")
                 </div>
                 <div class="oe_kanban_details">
                   <ul>
