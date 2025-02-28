@@ -10,14 +10,7 @@ Long description of module's purpose
 
     'author': "My Company",
     'website': "https://www.yourcompany.com",
-<<<<<<< HEAD
-<<<<<<< HEAD
     'icon':'/stmg_jamboree/static/imgs/icono64.png',
-=======
->>>>>>> 1488a45 (Revert "icono app")
-=======
-    'icon':'/stmg_jamboree/imgs/sede1.png',
->>>>>>> parent of 00e18d1 (prueba de herencia sin terminar)
 
     # Categories can be used to filter modules in modules listing
     # Check https://github.com/odoo/odoo/blob/15.0/odoo/addons/base/data/ir_module_category_data.xml
