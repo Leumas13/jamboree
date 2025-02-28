@@ -47,6 +47,7 @@
             <t t-name="kanban-box">
               <div class="oe_kanban_global_click">
 <<<<<<< HEAD
+<<<<<<< HEAD
               <div class="o_kanban_record_top">
                       <div class="o_kanban_record_headings">
                 <div class="o_kanban_image ">
@@ -55,6 +56,9 @@
                 </div>
 =======
                 <div class="o_kanban_image">
+=======
+                <div class="stmg_imagen_kanban">
+>>>>>>> parent of bc5e479 (correccion sede kanban)
                   <img t-att-src="kanban_image('stmg_jamboree.sede', 'fotografia', record.id.raw_value)" />
 >>>>>>> 1488a45 (Revert "icono app")
                 </div>
