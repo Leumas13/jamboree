@@ -42,7 +42,7 @@
     <field name="type">kanban</field>
     <field name="arch" type="xml">
         <kanban>
-            <field name="fotografia_mini" widget="image" preview_image="fotografia_mini"/>
+            <field name="fotografia_mini" widget="image" preview_image="fotografia_mini" alt="fotografia_mini"/>
             <templates>
                 <t t-name="kanban-box">
                 <div class="o_kanban_record" style="
