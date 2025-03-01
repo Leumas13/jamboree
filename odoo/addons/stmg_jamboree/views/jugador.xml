@@ -76,6 +76,7 @@
           <field name="apellidos" />
           <filter name="lateralidad" string="Derecha" domain="[('lateralidad', '=', 'derecha')]"/>
           <filter name="lateralidad" string="Izquierda" domain="[('lateralidad', '=', 'izquierda')]"/>
+          <filter name="equipo" string="Equipo" context="{'group_by':'equipo'}" />
         </search>
       </field>
     </record>
