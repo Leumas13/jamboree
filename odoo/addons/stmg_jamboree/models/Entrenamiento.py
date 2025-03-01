@@ -14,15 +14,14 @@ class Entrenamiento(models.Model):
     turno = fields.Datetime('Turno', index=True)
     
     sede_id = fields.Many2one('stmg_jamboree.sede', string='Sede')
-    nombre_sede = fields.Char(related='sede_id.nombre', string="Nombre de Sede")
-    foto_sede = fields.Image(related='sede_id.fotografia_mini', string="Foto de Sede")
+    sede_nombre = fields.Char(related='sede_id.nombre', string="Nombre de Sede")
+    sede_foto_mini = fields.Image(related='sede_id.fotografia_mini', string="Miniatura de Sede")
+    sede_foto = fields.Image(related='sede_id.fotografia', string="Foto de Sede")
     
     entrenador_ids = fields.Many2many('stmg_jamboree.entrenador', string='Entrenador', relation='stmg_jamboree_entrenamiento_entrenador_rel')
     jugador_ids = fields.Many2many('stmg_jamboree.jugador', string='Jugador', relation='stmg_jamboree_entrenamiento_jugador_rel')
 
     lista_entrenador = fields.Text(string='Lista de Entrenadores', compute='_entrenadores_str')
-    
-    
     
     terminado = fields.Boolean(string='Entrenamiento terminado', compute='_comprobar_fecha')
     dias = fields.Integer('dias')
