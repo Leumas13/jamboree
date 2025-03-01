@@ -161,7 +161,6 @@
       <field name="genero">Femenino</field>
       <field name="posicion">Lateral</field>
       <field name="lateralidad">izquierda</field>
-      <field name="categoria">Cadete</field>
       <field name="dni">53429851R</field>
       <field name="bono">10 sesiones</field>
       <field name="sesiones">5</field>
@@ -176,13 +175,12 @@
       <field name="name">2</field>
       <field name="nombre">Emma</field>
       <field name="apellidos">Sabino</field>
-      <field name="nacimiento">2020-03-25</field>
+      <field name="nacimiento">2017-03-25</field>
       <field name="equipo">Alcorcón CF</field>
       <field name="objetivos">Mejorar en salidas</field>
       <field name="genero">Femenino</field>
       <field name="posicion">Portero</field>
       <field name="lateralidad">derecha</field>
-      <field name="categoria">Benjamin</field>
       <field name="entrenamiento_ids" eval="[
               Command.link(ref('stmg_jamboree.entrenamiento8')),
               Command.link(ref('stmg_jamboree.entrenamiento10')),
@@ -199,7 +197,6 @@
       <field name="genero">Masculino</field>
       <field name="posicion">Central</field>
       <field name="lateralidad">derecha</field>
-      <field name="categoria">Cadete</field>
       <field name="dni">12345678Z</field>
       <field name="bono">10 sesiones</field>
       <field name="sesiones">8</field>
@@ -220,7 +217,6 @@
       <field name="genero">Masculino</field>
       <field name="posicion">Interior</field>
       <field name="lateralidad">derecha</field>
-      <field name="categoria">Cadete</field>
       <field name="dni">12345678Z</field>
       <field name="bono">10 sesiones</field>
       <field name="sesiones">2</field>
