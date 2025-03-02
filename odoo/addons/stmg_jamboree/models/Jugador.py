@@ -31,7 +31,7 @@ class Jugador(models.Model):
     dni = fields.Char('DNI')
     bono = fields.Char('Bono')
     sesiones = fields.Integer('Sesiones')
-    fotografia = fields.Binary('Fotografia')
+    fotografia = fields.Image('Fotografia')
     tutor_ids = fields.Many2many('stmg_jamboree.tutor', string='Tutor',relation='stmg_jamboree_tutor_jugador_rel')
     entrenamiento_ids = fields.Many2many('stmg_jamboree.entrenamiento', string='Entrenamientos',relation='stmg_jamboree_entrenamiento_jugador_rel')
     
@@ -67,20 +67,12 @@ class Jugador(models.Model):
         for jugador in jugadores:
             jugador._categoria_por_edad()
 
-    # calcular categoria para nuevos registros
-    @api.model
-    def create(self, values):
-        record = super(Jugador, self).create(values)
-        record._categoria_por_edad()  # Solo se calcula si es necesario
-        return record
-
+    
     # calcular categoria si se actualiza el jugador
     def write(self, values):
-        # Comprobamos si hay un cambio en el valor de 'nacimiento' antes de hacer el cálculo
         if 'nacimiento' in values:
-            # Calculamos la categoría solo si la fecha de nacimiento cambia
             self._categoria_por_edad()
 
-        # Realizamos la actualización del registro
         result = super(Jugador, self).write(values)
         return result
+    
