@@ -27,3 +27,16 @@ class Sede(models.Model):
                     contador += 1
                     
             record.entrenamientos_30dias = contador
+
+    @api.model
+    def create(self, values):
+        ultima_sede = self.search([], order="id desc", limit=1)
+        numero = 1
+
+        if ultima_sede:
+            numero = int(ultima_sede.name[5:]) + 1
+
+        values['name'] = f'SEDE_{numero}'
+
+        record = super(Sede, self).create(values)
+        return record

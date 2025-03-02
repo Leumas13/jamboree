@@ -76,3 +76,15 @@ class Jugador(models.Model):
         result = super(Jugador, self).write(values)
         return result
     
+    @api.model
+    def create(self, values):
+        ultimo_jugador = self.search([], order="id desc", limit=1)
+        numero = 1
+
+        if ultimo_jugador:
+            numero = int(ultimo_jugador.name[4:]) + 1
+
+        values['name'] = f'JUG_{numero}'
+
+        record = super(Jugador, self).create(values)
+        return record

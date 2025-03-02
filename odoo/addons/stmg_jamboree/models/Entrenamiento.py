@@ -5,15 +5,16 @@ class Entrenamiento(models.Model):
     _name = "stmg_jamboree.entrenamiento"
     _description = 'Entrenamiento'
     
-    name = fields.Char('id', required=True)
+    name = fields.Char('id', readonly=True)
     tipo = fields.Selection([
         ('personal', 'Personal'),
         ('infantil', 'Infantil'),
         ('desarrollo', 'Desarrollo'),
-    ], string='Tipo')
-    turno = fields.Datetime('Turno', index=True)
+    ], string='Tipo', required=True)
+    turno = fields.Datetime('Turno', required=True)
     
-    sede_id = fields.Many2one('stmg_jamboree.sede', string='Sede')
+    sede_id = fields.Many2one('stmg_jamboree.sede', string='Sede', required=True)
+    
     sede_nombre = fields.Char(related='sede_id.nombre', string="Nombre de Sede")
     sede_foto_mini = fields.Image(related='sede_id.fotografia_mini', string="Miniatura de Sede")
     sede_foto = fields.Image(related='sede_id.fotografia', string="Foto de Sede")
@@ -52,3 +53,23 @@ class Entrenamiento(models.Model):
             
             
             record.lista_entrenador = nombres_completos
+
+    @api.model
+    def create(self, values):
+        sede_id = values.get('sede_id')
+
+        sede = self.env['stmg_jamboree.sede'].browse(sede_id)
+        sede_nombre = sede.name
+
+        ultimo_entrenamiento = self.search([('sede_id', '=', sede_id)], order="id desc", limit=1)
+        numero = 1
+
+        if ultimo_entrenamiento:
+            cabecera = len(sede_nombre) + 5
+            numero = int(ultimo_entrenamiento.name[cabecera:]) + 1
+
+        values['name'] = f'{sede_nombre}_ENT_{numero}'
+
+        record = super(Entrenamiento, self).create(values)
+        return record
+    
