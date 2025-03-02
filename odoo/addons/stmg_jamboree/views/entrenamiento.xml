@@ -83,7 +83,7 @@
                     </div>
                   </div>
                   <div class="oe_kanban_footer" style="display: flex; justify-content: flex-end; margin-top: 10px;">
-                    <field name="entrenador_ids" widget="many2many_tags" options="{'color_field': 'name'}"/>
+                    <field name="entrenador_ids" widget="many2many_tags" options="{'color_field': 'id'}"/>
 
                   </div>
                 </div>
@@ -107,7 +107,6 @@
     </field>
   </record>
 
-  <odoo>
     <!-- Acción del informe -->
     <record id="stmg_jamboree.entrenamiento_informe" model="ir.actions.report">
       <field name="name">Informe de Entrenamiento</field>
@@ -181,9 +180,26 @@
         </t>
       </t>
     </template>
-  </odoo>
 
 
+    <record id="stmg_jamboree.entrenamiento_search" model="ir.ui.view">
+      <field name="name">stmg_jamboree.entrenamiento.search</field>
+      <field name="model">stmg_jamboree.entrenamiento</field>
+      <field name="arch" type="xml">
+        <search string="Entrenamiento">
+          <field name="name" />
+          <field name="sede_nombre" />
+          <field name="entrenador_ids" />
+          <filter name="tipo" string="Personal" domain="[('tipo', '=', 'personal')]"/>
+          <filter name="tipo" string="Desarrollo" domain="[('tipo', '=', 'desarrollo')]"/>
+          <filter name="tipo" string="Infantil" domain="[('tipo', '=', 'infantil')]"/>
+          <group>
+            <filter name="tipo" string="Tipo" context="{'group_by':'tipo'}" />
+            <filter name="sede_id" string="Sede" context="{'group_by':'sede_id'}"/>
+          </group>
+        </search>
+      </field>
+    </record>
 
 </data>
 </odoo>
