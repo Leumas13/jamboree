@@ -28,7 +28,7 @@ class Entrenamiento(models.Model):
     dias = fields.Integer('dias')
     
     
-    @api.depends('turno')
+    
     def _comprobar_fecha(self):
         for record in self:
             resta = record.turno - datetime.today()

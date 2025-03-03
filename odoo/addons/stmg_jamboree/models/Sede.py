@@ -15,7 +15,7 @@ class Sede(models.Model):
     entrenamientos_30dias = fields.Integer(string='Entrenamientos para 30 días', compute='_contador')
     
     
-    @api.depends('entrenamiento_ids')
+
     def _contador(self):
         
         for record in self:

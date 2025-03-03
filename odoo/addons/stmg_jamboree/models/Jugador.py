@@ -39,12 +39,10 @@ class Jugador(models.Model):
     def _categoria_por_edad(self):
         for rec in self:
             if rec.nacimiento:
-                # Calculamos la diferencia en años entre el año de nacimiento y el año actual
                 año_nacimiento = rec.nacimiento.year  
                 año_actual = datetime.today().year  
-                edad = año_actual - año_nacimiento  # Diferencia de años
+                edad = año_actual - año_nacimiento 
 
-                # Asignación de categorías según la diferencia de años
                 if edad >= 19:
                     rec.categoria = "juvenil"
                 elif edad >= 16:
