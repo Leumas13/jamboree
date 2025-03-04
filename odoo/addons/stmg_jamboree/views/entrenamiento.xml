@@ -21,7 +21,6 @@
                 </field>
                 <field name="jugador_ids">
                   <tree string="Jugadores">
-                    <field name="fotografia" />
                     <field name="id" />
                     <field name="nombre" />
                     <field name="apellidos" />
@@ -73,7 +72,9 @@
                             Turno: <field name="turno" />
                           </p>
                         </strong>
-                        <img t-att-src="kanban_image('stmg_jamboree.entrenamiento', 'sede_foto_mini', record.id.raw_value)" style="max-width: 90px; max-height: 90px; object-fit: cover; border-radius: 8px;"/>
+                        <img t-att-src="kanban_image('stmg_jamboree.entrenamiento', 'sede_foto_mini', record.id.raw_value)" 
+                              t-att-alt="record.nombre" 
+                              style="max-width: 90px; max-height: 90px; object-fit: cover; border-radius: 8px;"/>
                         <p>
                             Sede: <field name="sede_nombre"/>
                         <br/>
@@ -140,7 +141,9 @@
               <!-- Imagen de la sede -->
               <div>
                 <t t-if="entrenamiento.sede_foto">
-                  <img t-att-src="image_data_uri(entrenamiento.sede_foto)" style="max-width: 200px;"/>
+                  <img t-att-src="image_data_uri(entrenamiento.sede_foto)" 
+                        t-att-alt="record.nombre" 
+                        style="max-width: 200px;"/>
                 </t>
               </div>
               <div>

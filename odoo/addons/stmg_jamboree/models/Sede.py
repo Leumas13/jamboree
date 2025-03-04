@@ -28,15 +28,23 @@ class Sede(models.Model):
                     
             record.entrenamientos_30dias = contador
 
-    @api.model
-    def create(self, values):
+    @api.model_create_multi
+    def create(self, values_list):
+        # Buscar la última sede para determinar el próximo número
         ultima_sede = self.search([], order="id desc", limit=1)
         numero = 1
 
-        if ultima_sede:
-            numero = int(ultima_sede.name[5:]) + 1
+        if ultima_sede and ultima_sede.name:
+            try:
+                numero = int(ultima_sede.name[5:]) + 1
+            except ValueError:
+                numero = 1
 
-        values['name'] = f'SEDE_{numero}'
+        # Asignar un 'name' único a cada registro
+        for values in values_list:
+            values['name'] = f'SEDE_{numero}'
+            numero += 1
 
-        record = super(Sede, self).create(values)
-        return record
+        # Crear los registros con el método original
+        records = super(Sede, self).create(values_list)
+        return records

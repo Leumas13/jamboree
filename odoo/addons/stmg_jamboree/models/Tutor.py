@@ -12,15 +12,20 @@ class Tutor(models.Model):
     dni = fields.Char('DNI')
     jugador_ids = fields.Many2many('stmg_jamboree.jugador', string='Jugador',relation='stmg_jamboree_tutor_jugador_rel')
 
-    @api.model
-    def create(self, values):
+    @api.model_create_multi
+    def create(self, values_list):
         ultimo_tutor = self.search([], order="id desc", limit=1)
         numero = 1
 
-        if ultimo_tutor:
-            numero = int(ultimo_tutor.name[6:]) + 1
+        if ultimo_tutor and ultimo_tutor.name:
+            try:
+                numero = int(ultimo_tutor.name[6:]) + 1
+            except ValueError:
+                numero = 1
 
-        values['name'] = f'TUTOR_{numero}'
+        for values in values_list:
+            values['name'] = f'TUTOR_{numero}'
+            numero += 1
 
-        record = super(Tutor, self).create(values)
-        return record
+        records = super(Tutor, self).create(values_list)
+        return records

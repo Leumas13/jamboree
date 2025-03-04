@@ -12,15 +12,22 @@ class Entrenador(models.Model):
     fotografia = fields.Image('Fotografia')
     entrenamiento_ids = fields.Many2many('stmg_jamboree.entrenamiento', string='Entrenamientos', relation='stmg_jamboree_entrenamiento_entrenador_rel')
 
-    @api.model
-    def create(self, values):
+    @api.model_create_multi
+    def create(self, values_list):
         ultimo_entrenador = self.search([], order="id desc", limit=1)
         numero = 1
 
         if ultimo_entrenador:
-            numero = int(ultimo_entrenador.name[4:]) + 1
+            try:
+                numero = int(ultimo_entrenador.name[4:]) + 1
+            except ValueError:
+                numero = 1  # Si el valor no es correcto, reiniciar el contador
 
-        values['name'] = f'ENT_{numero}'
+        # Asignar 'name' único a cada registro en values_list
+        for values in values_list:
+            values['name'] = f'ENT_{numero}'
+            numero += 1
 
-        record = super(Entrenador, self).create(values)
-        return record
+        # Crear los registros usando super
+        records = super(Entrenador, self).create(values_list)
+        return records

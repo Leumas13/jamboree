@@ -16,7 +16,6 @@
               <group>
               <field name="jugador_ids">
                 <tree string="Jugadores">
-                  <field name="fotografia" />
                   <field name="id" />
                   <field name="nombre" />
                   <field name="apellidos" />
