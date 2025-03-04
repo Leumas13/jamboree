@@ -76,22 +76,18 @@ class Jugador(models.Model):
     
     @api.model_create_multi
     def create(self, values_list):
-        # Buscar el último jugador creado
         ultimo_jugador = self.search([], order="id desc", limit=1)
         numero = 1
 
-        # Extraer el número del último jugador
         if ultimo_jugador and ultimo_jugador.name:
             try:
                 numero = int(ultimo_jugador.name[4:]) + 1
             except ValueError:
                 numero = 1
 
-        # Asignar un 'name' único a cada nuevo jugador
         for values in values_list:
             values['name'] = f'JUG_{numero}'
             numero += 1
 
-        # Crear los registros con el método estándar de Odoo
         records = super(Jugador, self).create(values_list)
         return records

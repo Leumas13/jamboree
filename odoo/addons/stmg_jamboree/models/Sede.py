@@ -30,7 +30,6 @@ class Sede(models.Model):
 
     @api.model_create_multi
     def create(self, values_list):
-        # Buscar la última sede para determinar el próximo número
         ultima_sede = self.search([], order="id desc", limit=1)
         numero = 1
 
@@ -40,11 +39,9 @@ class Sede(models.Model):
             except ValueError:
                 numero = 1
 
-        # Asignar un 'name' único a cada registro
         for values in values_list:
             values['name'] = f'SEDE_{numero}'
             numero += 1
 
-        # Crear los registros con el método original
         records = super(Sede, self).create(values_list)
         return records

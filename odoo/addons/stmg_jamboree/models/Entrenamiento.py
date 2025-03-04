@@ -56,29 +56,24 @@ class Entrenamiento(models.Model):
 
     @api.model_create_multi
     def create(self, values_list):
-        # Buscar el último entrenamiento por sede y generar el siguiente número
         for values in values_list:
             sede_id = values.get('sede_id')
 
-            # Asegurarse de que el sede_id esté presente en los valores
             if sede_id:
                 sede = self.env['stmg_jamboree.sede'].browse(sede_id)
                 sede_nombre = sede.name
 
-                # Buscar el último entrenamiento relacionado con esta sede
                 ultimo_entrenamiento = self.search([('sede_id', '=', sede_id)], order="id desc", limit=1)
                 numero = 1
 
                 if ultimo_entrenamiento:
-                    cabecera = len(sede_nombre) + 5  # Ajuste dinámico para el nombre de la sede
+                    cabecera = len(sede_nombre) + 5 
                     try:
                         numero = int(ultimo_entrenamiento.name[cabecera:]) + 1
                     except ValueError:
-                        numero = 1  # Si no se puede convertir, reiniciar el número a 1
+                        numero = 1  
 
-                # Asignar el nombre único
                 values['name'] = f'{sede_nombre}_ENT_{numero}'
 
-        # Crear todos los registros con el método estándar
         records = super(Entrenamiento, self).create(values_list)
         return records

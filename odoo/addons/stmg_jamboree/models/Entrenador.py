@@ -21,13 +21,11 @@ class Entrenador(models.Model):
             try:
                 numero = int(ultimo_entrenador.name[4:]) + 1
             except ValueError:
-                numero = 1  # Si el valor no es correcto, reiniciar el contador
+                numero = 1 
 
-        # Asignar 'name' único a cada registro en values_list
         for values in values_list:
             values['name'] = f'ENT_{numero}'
             numero += 1
 
-        # Crear los registros usando super
         records = super(Entrenador, self).create(values_list)
         return records
