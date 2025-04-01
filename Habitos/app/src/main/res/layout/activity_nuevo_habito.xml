@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/naranjaFondo"
+    tools:context=".NuevoHabito">
+
+    <Button
+        android:id="@+id/btnCrear3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="Crear"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvImagen3"
+        app:layout_constraintVertical_bias="0.0"
+        android:backgroundTint="@color/naranja"/>
+
+    <Button
+        android:id="@+id/btnCrear2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="Crear"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvImagen2"
+        app:layout_constraintVertical_bias="0.0"
+        android:backgroundTint="@color/naranja"/>
+
+    <Button
+        android:id="@+id/btnCrear1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="Crear"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvImagen1"
+        app:layout_constraintVertical_bias="0.0"
+        android:backgroundTint="@color/naranja"/>
+
+    <EditText
+        android:id="@+id/etNombre1"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:fontFamily="@font/montserrat_bold"
+        android:textSize="6pt"
+        app:layout_constraintBottom_toBottomOf="@+id/tvNombre1"
+        app:layout_constraintStart_toEndOf="@+id/tvHabito1"
+        app:layout_constraintTop_toTopOf="@+id/tvNombre1" />
+
+    <TextView
+        android:id="@+id/tvImagen1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="Imagen"
+        app:layout_constraintStart_toStartOf="@+id/tvNombre1"
+        app:layout_constraintTop_toBottomOf="@+id/tvNombre1" />
+
+    <RadioGroup
+        android:id="@+id/rbGrupo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toEndOf="@+id/tvHabito1"
+        app:layout_constraintTop_toBottomOf="@+id/etNombre1">
+
+        <RadioButton
+            android:id="@+id/rb1image0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="imagen0"
+            android:drawableRight="@drawable/imagen0"
+            android:gravity="center" />
+
+        <RadioButton
+            android:id="@+id/rb1image1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="imagen1"
+            android:drawableRight="@drawable/imagen1"
+            android:gravity="center" />
+
+        <RadioButton
+            android:id="@+id/rb1image2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="imagen2"
+            android:drawableRight="@drawable/imagen2"
+            android:gravity="center" />
+
+        <RadioButton
+            android:id="@+id/rb1image3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="imagen3"
+            android:drawableRight="@drawable/imagen3"
+            android:gravity="center" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tvNombre1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="Nombre"
+        app:layout_constraintStart_toStartOf="@+id/tvHabito1"
+        app:layout_constraintTop_toBottomOf="@+id/tvHabito1" />
+
+    <TextView
+        android:id="@+id/tvHabito1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="Habito 1"
+        android:textColor="@color/naranja"
+        android:textSize="8pt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+    <EditText
+        android:id="@+id/etNombre2"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:textSize="6pt"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="@+id/tvNombre2"
+        app:layout_constraintStart_toEndOf="@+id/tvHabito2"
+        app:layout_constraintTop_toTopOf="@+id/tvNombre2" />
+
+    <RadioGroup
+        android:id="@+id/rbGrupo2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toEndOf="@+id/tvHabito2"
+        app:layout_constraintTop_toBottomOf="@+id/etNombre2">
+
+        <RadioButton
+            android:id="@+id/rb2image0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="imagen0"
+            android:drawableRight="@drawable/imagen0"
+            android:gravity="center" />
+
+        <RadioButton
+            android:id="@+id/rb2image1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="imagen1"
+            android:drawableRight="@drawable/imagen1"
+            android:gravity="center" />
+
+        <RadioButton
+            android:id="@+id/rb2image2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="imagen2"
+            android:drawableRight="@drawable/imagen2"
+            android:gravity="center" />
+
+        <RadioButton
+            android:id="@+id/rb2image3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="imagen3"
+            android:drawableRight="@drawable/imagen3"
+            android:gravity="center" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tvImagen2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Imagen"
+        app:layout_constraintStart_toStartOf="@+id/tvNombre2"
+        app:layout_constraintTop_toBottomOf="@+id/tvNombre2" />
+
+    <TextView
+        android:id="@+id/tvNombre2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Nombre"
+        app:layout_constraintStart_toStartOf="@+id/tvHabito2"
+        app:layout_constraintTop_toBottomOf="@+id/tvHabito2" />
+
+    <TextView
+        android:id="@+id/tvHabito2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="Habito 2"
+        android:textColor="@color/naranja"
+        android:textSize="8pt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCrear1"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+    <EditText
+        android:id="@+id/etNombre3"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:textSize="6pt"
+        android:fontFamily="@font/montserrat_bold"
+        app:layout_constraintBottom_toBottomOf="@+id/tvNombre3"
+        app:layout_constraintStart_toEndOf="@+id/tvHabito3"
+        app:layout_constraintTop_toTopOf="@+id/tvNombre3" />
+
+    <RadioGroup
+        android:id="@+id/rbGrupo3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toEndOf="@+id/tvHabito3"
+        app:layout_constraintTop_toBottomOf="@+id/etNombre3">
+
+        <RadioButton
+            android:id="@+id/rb3image0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="imagen0"
+            android:drawableRight="@drawable/imagen0"
+            android:gravity="center" />
+
+        <RadioButton
+            android:id="@+id/rb3image1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="imagen1"
+            android:drawableRight="@drawable/imagen1"
+            android:gravity="center" />
+
+        <RadioButton
+            android:id="@+id/rb3image2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="imagen2"
+            android:drawableRight="@drawable/imagen2"
+            android:gravity="center" />
+
+        <RadioButton
+            android:id="@+id/rb3image3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="imagen3"
+            android:drawableRight="@drawable/imagen3"
+            android:gravity="center" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tvImagen3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Imagen"
+        android:fontFamily="@font/montserrat_bold"
+        app:layout_constraintStart_toStartOf="@+id/tvNombre3"
+        app:layout_constraintTop_toBottomOf="@+id/tvNombre3" />
+
+    <TextView
+        android:id="@+id/tvNombre3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Nombre"
+        android:fontFamily="@font/montserrat_bold"
+        app:layout_constraintStart_toStartOf="@+id/tvHabito3"
+        app:layout_constraintTop_toBottomOf="@+id/tvHabito3" />
+
+    <TextView
+        android:id="@+id/tvHabito3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="Habito 3"
+        android:textColor="@color/naranja"
+        android:textSize="8pt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCrear2"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:backgroundTint="@color/naranja"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/naranja"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btnHome"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="#00FFFFFF"
+                app:srcCompat="@drawable/baseline_local_fire_department_24_white" />
+
+            <ImageButton
+                android:id="@+id/btnHabitos"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="#00FFFFFF"
+                app:srcCompat="@drawable/baseline_build_24_white" />
+
+            <ImageButton
+                android:id="@+id/btnSalir"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="#00FFFFFF"
+                app:srcCompat="@drawable/exit" />
+        </LinearLayout>
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

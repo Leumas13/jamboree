@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/naranjaFondo"
+    tools:context=".Principal">
+
+    <TextView
+        android:id="@+id/contadorRacha1"
+        android:layout_width="138dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="numero de dias"
+        android:textAlignment="textEnd"
+        app:layout_constraintEnd_toStartOf="@+id/btnAcumular1"
+        app:layout_constraintTop_toBottomOf="@+id/tituloHabito1" />
+
+    <Button
+        android:id="@+id/btnAcumular1"
+        android:layout_width="66dp"
+        android:layout_height="47dp"
+        android:backgroundTint="@color/naranja"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="OK!"
+        app:layout_constraintBottom_toBottomOf="@+id/contadorRacha1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.611"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/contadorRacha1"
+        app:layout_constraintVertical_bias="0.6" />
+
+    <Button
+        android:id="@+id/btnNota"
+        android:layout_width="86dp"
+        android:layout_height="47dp"
+        android:backgroundTint="@color/naranja"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="Nota"
+        app:layout_constraintBottom_toBottomOf="@+id/contadorRacha1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.897"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/contadorRacha1"
+        app:layout_constraintVertical_bias="0.56" />
+
+    <TextView
+        android:id="@+id/tituloHabito1"
+        android:layout_width="158dp"
+        android:layout_height="95dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:gravity="bottom"
+        android:text="Habito1"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.7"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.01999998" />
+
+    <ImageView
+        android:id="@+id/imgRachaOk1"
+        android:layout_width="97dp"
+        android:layout_height="95dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/tituloHabito1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.01999998"
+        app:srcCompat="@drawable/baseline_local_fire_department_24" />
+
+    <Button
+        android:id="@+id/btnResumen1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/naranja"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="Resumen"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/rachaMax1"
+        app:layout_constraintTop_toBottomOf="@+id/btnAcumular1" />
+
+    <TextView
+        android:id="@+id/rachaMax1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="@color/naranja"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="Mejor racha "
+        app:layout_constraintEnd_toStartOf="@+id/btnResumen1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAcumular1" />
+
+    <TextView
+        android:id="@+id/contadorRacha2"
+        android:layout_width="138dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="numero de dias"
+        android:textAlignment="textEnd"
+        app:layout_constraintEnd_toStartOf="@+id/btnAcumular2"
+        app:layout_constraintTop_toBottomOf="@+id/tituloHabito2" />
+
+    <Button
+        android:id="@+id/btnAcumular2"
+        android:layout_width="66dp"
+        android:layout_height="47dp"
+        android:text="OK!"
+        android:fontFamily="@font/montserrat_bold"
+        app:layout_constraintBottom_toBottomOf="@+id/contadorRacha2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.611"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/contadorRacha2"
+        android:backgroundTint="@color/naranja" />
+
+    <Button
+        android:id="@+id/btnNota2"
+        android:layout_width="86dp"
+        android:layout_height="47dp"
+        android:backgroundTint="@color/naranja"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="Nota"
+        app:layout_constraintBottom_toBottomOf="@+id/contadorRacha2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.897"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/contadorRacha2"
+        app:layout_constraintVertical_bias="0.56" />
+
+    <TextView
+        android:id="@+id/tituloHabito2"
+        android:layout_width="158dp"
+        android:layout_height="95dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:gravity="bottom"
+        android:text="Habito2"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.7"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.32" />
+
+    <ImageView
+        android:id="@+id/imgRachaOk2"
+        android:layout_width="97dp"
+        android:layout_height="95dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/tituloHabito2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.32"
+        app:srcCompat="@drawable/baseline_local_fire_department_24" />
+
+    <Button
+        android:id="@+id/btnResumen2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/naranja"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="Resumen"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/rachaMax2"
+        app:layout_constraintTop_toBottomOf="@+id/btnAcumular2" />
+
+    <TextView
+        android:id="@+id/rachaMax2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="@color/naranja"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="Mejor racha "
+        app:layout_constraintEnd_toStartOf="@+id/btnResumen2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAcumular2" />
+
+    <TextView
+        android:id="@+id/contadorRacha3"
+        android:layout_width="138dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="numero de dias"
+        android:textAlignment="textEnd"
+        app:layout_constraintEnd_toStartOf="@+id/btnAcumular3"
+        app:layout_constraintTop_toBottomOf="@+id/tituloHabito3" />
+
+    <Button
+        android:id="@+id/btnAcumular3"
+        android:layout_width="66dp"
+        android:layout_height="47dp"
+        android:text="OK!"
+        android:fontFamily="@font/montserrat_bold"
+        app:layout_constraintBottom_toBottomOf="@+id/contadorRacha3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.611"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/contadorRacha3"
+        android:backgroundTint="@color/naranja" />
+
+    <Button
+        android:id="@+id/btnNota3"
+        android:layout_width="86dp"
+        android:layout_height="47dp"
+        android:backgroundTint="@color/naranja"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="Nota"
+        app:layout_constraintBottom_toBottomOf="@+id/contadorRacha3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.897"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/contadorRacha3"
+        app:layout_constraintVertical_bias="0.56" />
+
+    <TextView
+        android:id="@+id/tituloHabito3"
+        android:layout_width="158dp"
+        android:layout_height="95dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:gravity="bottom"
+        android:text="Habito3"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.7"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.63" />
+
+    <ImageView
+        android:id="@+id/imgRachaOk3"
+        android:layout_width="97dp"
+        android:layout_height="95dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/tituloHabito3"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.63"
+        app:srcCompat="@drawable/baseline_local_fire_department_24" />
+
+    <Button
+        android:id="@+id/btnResumen3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/naranja"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="Resumen"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/rachaMax3"
+        app:layout_constraintTop_toBottomOf="@+id/btnAcumular3" />
+
+    <TextView
+        android:id="@+id/rachaMax3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="@color/naranja"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="Mejor racha "
+        app:layout_constraintEnd_toStartOf="@+id/btnResumen3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAcumular3" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:backgroundTint="@color/naranja"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/naranja"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/btnHome"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:backgroundTint="#00FFFFFF"
+                    app:srcCompat="@drawable/baseline_local_fire_department_24_white" />
+
+                <ImageButton
+                    android:id="@+id/btnHabitos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:backgroundTint="#00FFFFFF"
+                    app:srcCompat="@drawable/baseline_build_24_white" />
+
+                <ImageButton
+                    android:id="@+id/btnSalir"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:backgroundTint="#00FFFFFF"
+                    app:srcCompat="@drawable/exit" />
+            </LinearLayout>
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
