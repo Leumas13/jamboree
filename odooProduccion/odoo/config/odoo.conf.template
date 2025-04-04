@@ -204,44 +204,6 @@ log-level = info
 # 
 #-----------------------------------------------------------------------------
 
-#HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH
-# Database Settings are configured by Odoo's docker image and environment vars
-#HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH
-
-#HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH
-# Email Settings
-#HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH
-
-#-----------------------------------------------------------------------------
-# Specify the SMTP server for sending email (default localhost).
-#-----------------------------------------------------------------------------
-;smtp_server = smtp
-
-#-----------------------------------------------------------------------------
-# Specify the SMTP user for sending email (default False).
-#-----------------------------------------------------------------------------
-;smtp_user = False
-
-#-----------------------------------------------------------------------------
-# Specify the SMTP password for sending email (default False).
-#-----------------------------------------------------------------------------
-;smtp_password = False
-
-#-----------------------------------------------------------------------------
-# if True, SMTP connections will be encrypted with SSL (STARTTLS)
-#-----------------------------------------------------------------------------
-;smtp_ssl = False
-
-#-----------------------------------------------------------------------------
-# Specify the SMTP email address for sending email
-#-----------------------------------------------------------------------------
-;email_from = "TKL-Odoo-Server@example.com"
-
-#-----------------------------------------------------------------------------
-# Specify the SMTP port
-#-----------------------------------------------------------------------------
-;smtp_port = 25
-
 
 #HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH
 # Based on sample by @Guidoom 
