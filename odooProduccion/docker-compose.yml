@@ -13,11 +13,11 @@ services:
     ports:
       # <Puerto expuesto> : < Puerto dentro del container>
       # Solo para desarrollo. Comentar en produccion
-      - '85432:85432'
+      - '45432:45432'
     expose:
       # Abre el puerto 5432 en el container al exterior sin tocar nada de la configuración del postgresql
       # Solo para desarrollo. Comentar en produccion
-      - '85432'
+      - '45432'
   odoo:
     image: odoo:17.0
     container_name: odoo2
