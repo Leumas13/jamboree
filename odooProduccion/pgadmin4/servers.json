@@ -3,7 +3,7 @@
         "1": {
             "Name": "postgres",
             "Group": "Servers",
-            "Port": 85432,
+            "Port": 45432,
             "Username": "odoo",
             "PassFile": "/pgadmin4/pgpass",
             "Host": "postgres",
