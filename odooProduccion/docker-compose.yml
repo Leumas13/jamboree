@@ -24,7 +24,7 @@ services:
     depends_on:
       - db
     ports:
-      - "88069:88069"
+      - "48069:48069"
     tty: true
     command: odoo --update=stmg_jamboree --load=web --dev=reload
     #odoo --update=stmg_jamboree --load=web --dev=reload
