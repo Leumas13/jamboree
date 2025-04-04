@@ -1,0 +1,12 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_stmg_jamboree_sede_users,stmg_jamboree.sede_users,model_stmg_jamboree_sede,base.group_user,1,0,0,0
+access_stmg_jamboree_jugador_users,stmg_jamboree.jugador_users,model_stmg_jamboree_jugador,base.group_user,1,0,0,0
+access_stmg_jamboree_entrenador_users,stmg_jamboree.entrenador_users,model_stmg_jamboree_entrenador,base.group_user,1,0,0,0
+access_stmg_jamboree_entrenamiento_users,stmg_jamboree.entrenamiento_users,model_stmg_jamboree_entrenamiento,base.group_user,1,0,0,0
+access_stmg_jamboree_tutor_users,stmg_jamboree.tutor_users,model_stmg_jamboree_tutor,base.group_user,1,0,0,0
+access_stmg_jamboree_sede_admin,stmg_jamboree.sede_admin,model_stmg_jamboree_sede,base.group_erp_manager,1,1,1,1
+access_stmg_jamboree_jugador_admin,stmg_jamboree.jugador_admin,model_stmg_jamboree_jugador,base.group_erp_manager,1,1,1,1
+access_stmg_jamboree_entrenador_admin,stmg_jamboree.entrenador_admin,model_stmg_jamboree_entrenador,base.group_erp_manager,1,1,1,1
+access_stmg_jamboree_entrenamiento_admin,stmg_jamboree.entrenamiento_admin,model_stmg_jamboree_entrenamiento,base.group_erp_manager,1,1,1,1
+access_stmg_jamboree_tutor_admin,stmg_jamboree.tutor_admin,model_stmg_jamboree_tutor,base.group_erp_manager,1,1,1,1
+
