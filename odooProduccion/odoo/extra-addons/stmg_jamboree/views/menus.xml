@@ -1,0 +1,106 @@
+<odoo>
+    <data>
+        <menuitem
+            id="stmg_jamboree.root_menu"
+            name="Jamboree"
+            sequence="10"/>
+
+
+            <!-- ///////////////////////////////      ITEMS ACTIONS       ///////////////////////////////  -->
+            <!-- accion de ventana-->
+            <record id="stmg_jamboree.sede_action" model="ir.actions.act_window">
+                <field name="name">Sede</field>
+                <field name="res_model">stmg_jamboree.sede</field>
+                <field name="view_mode">kanban,tree,form</field>
+                <!-- filtros en datos-->
+                <field name="domain">[]</field>
+                <!--parametros que se pueden recibir-->
+                <field name="context">{}</field>
+            </record>
+
+            <record id="stmg_jamboree.entrenamiento_action" model="ir.actions.act_window">
+                <field name="name">Entrenamiento</field>
+                <field name="res_model">stmg_jamboree.entrenamiento</field>
+                <field name="view_mode">calendar,kanban,tree,form</field>
+                <!-- filtros en datos-->
+                <field name="domain">[]</field>
+                <!--parametros que se pueden recibir-->
+                <field name="context">{}</field>
+            </record>
+
+            <record id="stmg_jamboree.entrenador_action" model="ir.actions.act_window">
+                <field name="name">Entrenador</field>
+                <field name="res_model">stmg_jamboree.entrenador</field>
+                <field name="view_mode">tree,form</field>
+                <!-- filtros en datos-->
+                <field name="domain">[]</field>
+                <!--parametros que se pueden recibir-->
+                <field name="context">{}</field>
+            </record>
+
+            <record id="stmg_jamboree.jugador_action" model="ir.actions.act_window">
+                <field name="name">Jugador</field>
+                <field name="res_model">stmg_jamboree.jugador</field>
+                <field name="view_mode">tree,search,form</field>
+                <!-- filtros en datos-->
+                <field name="domain">[]</field>
+                <!--parametros que se pueden recibir-->
+                <field name="context">{}</field>
+            </record>
+
+            <record id="stmg_jamboree.tutor_action" model="ir.actions.act_window">
+                <field name="name">Tutor</field>
+                <field name="res_model">stmg_jamboree.tutor</field>
+                <field name="view_mode">tree,form</field>
+                <!-- filtros en datos-->
+                <field name="domain">[]</field>
+                <!--parametros que se pueden recibir-->
+                <field name="context">{}</field>
+            </record>
+
+
+            <!-- ///////////////////////////////      ITEMS MENU       ///////////////////////////////  -->
+            <!--si el action tiene un destino es un boton, si no tiene action despliega un submenu-->
+            <menuitem
+                id="stmg_jamboree.sede_menu"
+                name="Sede"
+                action="stmg_jamboree.sede_action"
+                parent="stmg_jamboree.root_menu"
+                sequence="10"/>
+
+                <menuitem
+                id="stmg_jamboree.entrenamiento_menu"
+                name="Entrenamiento"
+                action="stmg_jamboree.entrenamiento_action"
+                parent="stmg_jamboree.root_menu"
+                sequence="10"/>
+
+                <menuitem
+                id="stmg_jamboree.entrenador_menu"
+                name="Entrenador"
+                action="stmg_jamboree.entrenador_action"
+                parent="stmg_jamboree.root_menu"
+                sequence="10"/>
+                
+                <menuitem
+                id="stmg_jamboree.cliente_menu"
+                name="Clientes"
+                parent="stmg_jamboree.root_menu"
+                sequence="10"/>
+                
+                <menuitem
+                id="stmg_jamboree.jugador_menu"
+                name="Jugador"
+                action="stmg_jamboree.jugador_action"
+                parent="stmg_jamboree.cliente_menu"
+                sequence="10"/>
+
+                <menuitem
+                id="stmg_jamboree.tutor_menu"
+                name="Tutor"
+                action="stmg_jamboree.tutor_action"
+                parent="stmg_jamboree.cliente_menu"
+                sequence="10"/>
+
+    </data>
+</odoo>
