@@ -1,0 +1,87 @@
+<odoo>
+  <data>
+    <record id="stmg_jamboree.jugador_form" model="ir.ui.view">
+      <field name="name">stmg_jamboree.jugador.form</field>
+      <field name="model">stmg_jamboree.jugador</field>
+      <field name="arch" type="xml">
+        <form string="">
+          <sheet>
+            <group>
+              <field name="name" />
+              <field name="nombre" />
+              <field name="apellidos" />
+              <field name="nacimiento" />
+              <field name="equipo" />
+              <field name="objetivos" />
+              <field name="genero" />
+              <field name="posicion" />
+              <field name="lateralidad" />
+              <field name="categoria" />
+              <field name="dni" />
+              <field name="bono" />
+              <field name="sesiones" />
+              <field name="fotografia" widget="image" options="{'size': [100 , 150]}" />
+              <field name="entrenamiento_ids">
+                <tree string="Entrenamientos">
+                  <field name="id" />
+                  <field name="tipo" />
+                  <field name="turno" />
+                  <field name="sede_id">
+                    <tree string="Sede">
+                      <field name="nombre" />
+                    </tree>
+                  </field>
+                </tree>
+              </field>
+              <field name="tutor_ids">
+                    <tree string="Tutores">
+                      <field name="nombre" />
+                    </tree>
+                  </field>
+            </group>
+          </sheet>
+        </form>
+      </field>
+    </record>
+
+    <record id="stmg_jamboree.jugador_tree" model="ir.ui.view">
+      <field name="name">stmg_jamboree.jugador.tree</field>
+      <field name="model">stmg_jamboree.jugador</field>
+      <field name="arch" type="xml">
+        <tree string="">
+          <field name="name" />
+          <field name="nombre" />
+          <field name="apellidos" />
+          <field name="nacimiento" />
+          <field name="equipo" />
+          <field name="objetivos" />
+          <field name="genero" />
+          <field name="posicion" />
+          <field name="lateralidad" />
+          <field name="categoria" />
+          <field name="dni" />
+          <field name="bono" />
+          <field name="sesiones" />
+        </tree>
+      </field>
+    </record>
+
+    <record id="stmg_jamboree.jugador_search" model="ir.ui.view">
+      <field name="name">stmg_jamboree.jugador.search</field>
+      <field name="model">stmg_jamboree.jugador</field>
+      <field name="arch" type="xml">
+        <search string="Jugadores">
+          <field name="name" />
+          <field name="nombre" />
+          <field name="apellidos" />
+          <filter name="lateralidad" string="Derecha" domain="[('lateralidad', '=', 'derecha')]"/>
+          <filter name="lateralidad" string="Izquierda" domain="[('lateralidad', '=', 'izquierda')]"/>
+          <group>
+            <filter name="equipo" string="Equipo" context="{'group_by':'equipo'}" />
+            <filter name="categoria" string="Categorias" context="{'group_by':'categoria'}"/>
+          </group>
+        </search>
+      </field>
+    </record>
+  </data>
+</odoo>

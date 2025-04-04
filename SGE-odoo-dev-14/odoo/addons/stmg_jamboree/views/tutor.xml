@@ -1,0 +1,46 @@
+<odoo>
+  <data>
+    <record id="stmg_jamboree.tutor_form" model="ir.ui.view">
+      <field name="name">stmg_jamboree.tutor.form</field>
+      <field name="model">stmg_jamboree.tutor</field>
+      <field name="arch" type="xml">
+        <form string="">
+          <sheet>
+            <group>
+              <field name="name" />
+              <field name="nombre" />
+              <field name="apellidos" />
+              <field name="email" />
+              <field name="telefono" />
+              <field name="dni" />
+              <group>
+              <field name="jugador_ids">
+                <tree string="Jugadores">
+                  <field name="id" />
+                  <field name="nombre" />
+                  <field name="apellidos" />
+                </tree>
+              </field>
+              </group>
+            </group>
+          </sheet>
+        </form>
+      </field>
+    </record>
+
+    <record id="stmg_jamboree.tutor_tree" model="ir.ui.view">
+      <field name="name">stmg_jamboree.tutor.tree</field>
+      <field name="model">stmg_jamboree.tutor</field>
+      <field name="arch" type="xml">
+        <tree string="">
+          <field name="name" />
+              <field name="nombre" />
+              <field name="apellidos" />
+              <field name="email" />
+              <field name="telefono" />
+              <field name="dni" />
+        </tree>
+      </field>
+    </record>
+  </data>
+</odoo>
