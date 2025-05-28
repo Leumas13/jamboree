@@ -1,0 +1,30 @@
+<odoo>
+  <template id="stmg_portal_entrenamientos" name="Mis Entrenamientos">
+    <t t-call="portal.portal_layout">
+      <t t-set="breadcrumbs" t-value="[(None, 'Mis Entrenamientos')]"/>
+      <div class="container mt-4">
+        <h2 class="card-title">Mis Entrenamientos</h2>
+        <table class="table table-hover">
+          <thead>
+            <tr>
+              <th>Turno</th>
+              <th>Sede</th>
+              <th>Capacidad</th>
+              <th>Jugadores</th>
+            </tr>
+          </thead>
+          <tbody>
+            <t t-foreach="entrenamientos" t-as="ent">
+              <tr>
+                <td><t t-esc="ent.turno"/></td>
+                <td><t t-esc="ent.sede_nombre"/></td>
+                <td><t t-esc="ent.capacidad"/></td>
+                <td><t t-esc="ent.numero_jugadores"/></td>
+              </tr>
+            </t>
+          </tbody>
+        </table>
+      </div>
+    </t>
+  </template>
+</odoo>

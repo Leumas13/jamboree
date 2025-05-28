@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#6CBE8D"
+    tools:context=".actividades.CalendarioEntrenamientos">
+
+
+    <com.applandeo.materialcalendarview.CalendarView
+        android:id="@+id/calendar"
+        android:layout_width="413dp"
+        android:layout_height="444dp"
+        android:layout_marginBottom="224dp"
+        app:abbreviationsBarColor="#C5DDCE"
+        app:abbreviationsLabelsColor="#498862"
+        app:anotherMonthsDaysLabelsColor="#636E67"
+        app:daysLabelsColor="#5A9E75"
+        app:eventsEnabled="true"
+        app:headerColor="#AEABCFB9"
+        app:headerLabelColor="#3C8057"
+        app:layout_constraintBottom_toBottomOf="@+id/scrollView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.933"
+        app:pagesColor="#526CBD8C"
+        app:selectionColor="#1A2A30"
+        app:selectionLabelColor="#FFFFFF"
+        app:todayLabelColor="#1D36DD"
+        app:type="one_day_picker">
+
+    </com.applandeo.materialcalendarview.CalendarView>
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="Entrenamientos"
+        android:textColor="#1A2A30"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toTopOf="@+id/calendar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.179" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="413dp"
+        android:layout_height="72dp"
+        android:background="#E162AA7E"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tabla"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="NotSibling">
+
+        <ImageButton
+            android:id="@+id/btSalirDat"
+            android:layout_width="65dp"
+            android:layout_height="53dp"
+            android:background="@drawable/salir"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/imageView"
+            app:layout_constraintHorizontal_bias="0.547"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="75dp"
+            android:layout_height="50dp"
+            android:background="@drawable/logo_oscuroescala_2x"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/btSalir"
+            android:layout_width="69dp"
+            android:layout_height="64dp"
+            android:background="@drawable/perfil"
+            android:clickable="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.474"
+            app:layout_constraintStart_toEndOf="@+id/imageView"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="412dp"
+        android:layout_height="212dp"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TableLayout
+            android:id="@+id/tabla"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="72dp"
+            android:scrollbarStyle="insideOverlay"
+            android:scrollbars="vertical"
+            android:verticalScrollbarPosition="right"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </TableLayout>
+    </ScrollView>
+
+    <ProgressBar
+        android:id="@+id/barraP"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="412dp"
+        android:layout_height="23dp"
+        android:max="100"
+        android:progressTint="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/calendar"
+        app:layout_constraintStart_toStartOf="@+id/calendar"
+        app:layout_constraintTop_toTopOf="@+id/calendar"
+        app:layout_constraintVertical_bias="0.10"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

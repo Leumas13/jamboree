@@ -1,0 +1,50 @@
+<odoo>
+  <data>
+    <record id="stmg_jamboree.tutor_form" model="ir.ui.view">
+      <field name="name">stmg_jamboree.tutor.form</field>
+      <field name="model">stmg_jamboree.tutor</field>
+      <field name="arch" type="xml">
+        <form string="">
+          <sheet>
+            <group>
+              <field name="name" />
+              <field name="nombre" />
+              <field name="apellidos" />
+              <field name="email" />
+              <field name="telefono" />
+              <field name="dni" />
+              <field name="jugador_ids">
+                <tree string="Jugadores">
+                  <field name="name" />
+                  <field name="nombre" />
+                  <field name="apellidos" />
+                </tree>
+              </field>
+            </group>
+          </sheet>
+          <div class="oe_chatter">
+            <field name="message_follower_ids" groups="base.group_user" widget="mail_followers"/>
+            <field name="message_ids" widget="mail_thread"/>
+            <field name="activity_ids" widget="mail_activity"/>
+          </div>
+        </form>
+      </field>
+    </record>
+
+    <record id="stmg_jamboree.tutor_tree" model="ir.ui.view">
+      <field name="name">stmg_jamboree.tutor.tree</field>
+      <field name="model">stmg_jamboree.tutor</field>
+      <field name="arch" type="xml">
+        <tree string="">
+          <field name="id"/>
+          <field name="name" />
+            <field name="nombre" />
+            <field name="apellidos" />
+            <field name="email" />
+            <field name="telefono" />
+            <field name="dni" />
+        </tree>
+      </field>
+    </record>
+  </data>
+</odoo>

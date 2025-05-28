@@ -1,0 +1,20 @@
+<odoo>
+  <data>
+
+    <!-- Vista Tree de Contactos que son Entrenadores -->
+    <record id="stmg_jamboree_entrenador_tree" model="ir.ui.view">
+      <field name="name">stmg_jamboree.entrenador.contact.tree</field>
+      <field name="model">res.partner</field>
+      <field name="arch" type="xml">
+        <tree string="Entrenadores">
+        <field name="id"/>
+          <field name="id_entrenador"/>
+          <field name="name"/>
+          <field name="email"/>
+          <field name="phone"/>
+          <field name="vat"/>
+        </tree>
+      </field>
+    </record>
+  </data>
+</odoo>

@@ -1,0 +1,13 @@
+<odoo>
+    <!-- Regla: ver solo sus entrenamientos -->
+    <record id="stmg_rule_entrenamiento_by_entrenador" model="ir.rule">
+        <field name="name">Ver Entrenamientos del Entrenador</field>
+        <field name="model_id" ref="model_stmg_jamboree_entrenamiento"/>
+        <field name="domain_force">[('entrenador_ids.user_id', '=', user.id)]</field>
+        <field name="groups" eval="[(4, ref('stmg_jamboree.stmg_group_entrenador'))]"/>
+        <field name="perm_read" eval="1"/>
+        <field name="perm_write" eval="0"/>
+        <field name="perm_create" eval="0"/>
+        <field name="perm_unlink" eval="0"/>
+    </record>
+</odoo>

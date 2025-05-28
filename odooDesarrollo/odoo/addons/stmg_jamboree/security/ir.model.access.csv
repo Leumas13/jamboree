@@ -1,0 +1,16 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_jugador_entrenador,access.jugador.entrenador,model_stmg_jamboree_jugador,stmg_group_entrenador,1,0,0,0
+access_jugador_administrador,access.jugador.administrador,model_stmg_jamboree_jugador,stmg_group_administrador_escuela,1,1,1,0
+access_jugador_mantenimiento,access.jugador.mantenimiento,model_stmg_jamboree_jugador,base.group_system,1,1,1,1
+access_entrenador_entrenador,access.entrenador.entrenador,model_stmg_jamboree_entrenador,stmg_group_entrenador,1,0,0,0
+access_entrenador_administrador,access.entrenador.administrador,model_stmg_jamboree_entrenador,stmg_group_administrador_escuela,1,1,1,0
+access_entrenador_mantenimiento,access.entrenador.mantenimiento,model_stmg_jamboree_entrenador,base.group_system,1,1,1,1
+access_tutor_administrador,access.tutor.administrador,model_stmg_jamboree_tutor,stmg_group_administrador_escuela,1,1,1,0
+access_tutor_mantenimiento,access.tutor.mantenimiento,model_stmg_jamboree_tutor,base.group_system,1,1,1,1
+access_entrenamiento_entrenador,access.entrenamiento.entrenador,model_stmg_jamboree_entrenamiento,stmg_group_entrenador,1,0,0,0
+access_entrenamiento_administrador,access.entrenamiento.administrador,model_stmg_jamboree_entrenamiento,stmg_group_administrador_escuela,1,1,1,0
+access_entrenamiento_mantenimiento,access.entrenamiento.mantenimiento,model_stmg_jamboree_entrenamiento,base.group_system,1,1,1,1
+access_sede_administrador,access.sede.administrador,model_stmg_jamboree_sede,stmg_group_administrador_escuela,1,1,1,0
+access_sede_mantenimiento,access.sede.mantenimiento,model_stmg_jamboree_sede,base.group_system,1,1,1,1
+access_res_users_entrenador,res.users.entrenador,base.model_res_users,stmg_group_entrenador,1,0,0,0
+access_res_partner_entrenador,res.partner.entrenador,base.model_res_partner,stmg_group_entrenador,1,0,0,0

@@ -1,0 +1,39 @@
+<odoo>
+  <template id="stmg_portal_entrenamientos" name="Mis Entrenamientos">
+    <t t-call="portal.portal_layout">
+      <t t-set="breadcrumbs" t-value="[(None, 'Mis Entrenamientos')]"/>
+      <div class="container mt-4">
+        <h2 class="card-title">Mis Entrenamientos</h2>
+        <table class="table table-hover">
+          <thead>
+            <tr>
+              <th>Turno</th>
+              <th>Sede</th>
+              <th>Capacidad</th>
+              <th>Jugadores</th>
+              <th>Ficha entreno</th>
+            </tr>
+          </thead>
+          <tbody>
+            <t t-foreach="entrenamientos" t-as="ent">
+              <tr>
+                <td><t t-esc="ent['turno_formateado']"/></td>
+                <td><t t-esc="ent['ent'].sede_nombre"/></td>
+                <td><t t-esc="ent['ent'].capacidad"/></td>
+                <td><t t-esc="ent['ent'].numero_jugadores"/></td>
+                <td>
+                  <t t-if="ent['mostrar_ficha']">
+                    <a t-att-href="'/web/content/stmg_jamboree.entrenamiento/' + str(ent['ent'].id) + '/ficha_pdf?download=true'"
+                      class="btn btn-outline-primary btn-sm" target="_blank">
+                      Descargar PDF
+                    </a>
+                  </t>
+                </td>
+              </tr>
+            </t>
+          </tbody>
+        </table>
+      </div>
+    </t>
+  </template>
+</odoo>

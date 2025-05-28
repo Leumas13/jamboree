@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="stmg_jamboree_tarea_jugador" model="ir.cron">
+            <field name="name">Actualizar Categoría de Jugadores cada 1 de julio</field>
+            <field name="model_id" ref="model_stmg_jamboree_jugador"/>
+            <field name="state">code</field>
+            <field name="code">model._actualizar_categoria()</field>
+            <field name="interval_number">12</field>
+            <field name="interval_type">months</field>
+            <field name="nextcall">2025-07-01 00:00:00</field>
+            <field name="active" eval="True"/>
+        </record>
+    </data>
+</odoo>

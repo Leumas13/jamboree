@@ -1,0 +1,310 @@
+<odoo>
+    <data>
+    <!--//////////////// CIUDAD Y SEDE ///////////////////-->
+    <record id="demo_city1" model="res.city">
+        <field name="name">Griñon</field>
+        <field name="country_id" ref="base.es" />
+    </record>
+
+    <record id="stmg_jamboree.sede1" model="stmg_jamboree.sede">
+      <field name="name">Griñon</field>
+      <field name="ciudad_id" ref="demo_city1"/>
+      <field name="fotografia" type="base64" file="stmg_jamboree/static/imgs/sede1.png"/>
+    </record>
+
+    <record id="demo_city2" model="res.city">
+        <field name="name">Móstoles</field>
+        <field name="country_id" ref="base.es" />
+    </record>
+
+    <record id="stmg_jamboree.sede2" model="stmg_jamboree.sede">
+      <field name="name">Móstoles</field>
+      <field name="ciudad_id" ref="demo_city2"/>
+      <field name="fotografia" type="base64" file="stmg_jamboree/static/imgs/sede2.png"/>
+    </record>
+
+
+    <!--//////////////// ENTRENAMIENTOS ///////////////////-->
+
+    <record id="stmg_jamboree.entrenamiento1" model="stmg_jamboree.entrenamiento">
+      <field name="tipo">personal</field>
+      <field name="turno">2025-05-12 12:00</field>
+      <field name="sede_id" ref="stmg_jamboree.sede2"/>
+      <field name="capacidad" >12</field>
+    </record>
+
+    <record id="stmg_jamboree.entrenamiento2" model="stmg_jamboree.entrenamiento">
+      <field name="tipo">personal</field>
+      <field name="turno">2025-05-12 14:00</field>
+      <field name="sede_id" ref="stmg_jamboree.sede2"/>
+      <field name="capacidad" >12</field>
+    </record>
+
+    <record id="stmg_jamboree.entrenamiento3" model="stmg_jamboree.entrenamiento">
+      <field name="tipo">infantil</field>
+      <field name="turno">2025-05-13 11:00</field>
+      <field name="sede_id" ref="stmg_jamboree.sede2"/>
+      <field name="capacidad" >12</field>
+    </record>
+
+    <record id="stmg_jamboree.entrenamiento4" model="stmg_jamboree.entrenamiento">
+      <field name="tipo">desarrollo</field>
+      <field name="turno">2025-05-14 12:00</field>
+      <field name="sede_id" ref="stmg_jamboree.sede2"/>
+      <field name="capacidad" >12</field>
+    </record>
+
+       <record id="stmg_jamboree.entrenamiento5" model="stmg_jamboree.entrenamiento">
+      <field name="tipo">infantil</field>
+      <field name="turno">2025-05-12 12:00</field>
+      <field name="sede_id" ref="stmg_jamboree.sede1"/>
+      <field name="capacidad" >12</field>
+    </record>
+
+    <record id="stmg_jamboree.entrenamiento6" model="stmg_jamboree.entrenamiento">
+      <field name="tipo">desarrollo</field>
+      <field name="turno">2025-05-12 14:00</field>
+      <field name="sede_id" ref="stmg_jamboree.sede1"/>
+      <field name="capacidad" >12</field>
+    </record>
+
+    <record id="stmg_jamboree.entrenamiento7" model="stmg_jamboree.entrenamiento">
+      <field name="tipo">personal</field>
+      <field name="turno">2025-05-13 11:00</field>
+      <field name="sede_id" ref="stmg_jamboree.sede1"/>
+      <field name="capacidad" >12</field>
+    </record>
+
+    <record id="stmg_jamboree.entrenamiento8" model="stmg_jamboree.entrenamiento">
+      <field name="tipo">personal</field>
+      <field name="turno">2025-05-14 12:00</field>
+      <field name="sede_id" ref="stmg_jamboree.sede1"/>
+      <field name="capacidad" >12</field>
+    </record>
+
+    <record id="stmg_jamboree.entrenamiento9" model="stmg_jamboree.entrenamiento">
+      <field name="tipo">infantil</field>
+      <field name="turno">2025-05-14 11:00</field>
+      <field name="sede_id" ref="stmg_jamboree.sede1"/>
+      <field name="capacidad" >12</field>
+    </record>
+
+    <record id="stmg_jamboree.entrenamiento10" model="stmg_jamboree.entrenamiento">
+      <field name="tipo">desarrollo</field>
+      <field name="turno">2025-05-14 12:00</field>
+      <field name="sede_id" ref="stmg_jamboree.sede1"/>
+      <field name="capacidad" >12</field>
+    </record>
+
+    <!--//////////////// ENTRENAMIENTOS ANTIGUOS ///////////////////-->
+
+    <record id="stmg_jamboree.entrenamiento11" model="stmg_jamboree.entrenamiento">
+      <field name="tipo">personal</field>
+      <field name="turno">2025-04-12 12:00</field>
+      <field name="sede_id" ref="stmg_jamboree.sede2"/>
+    </record>
+
+    <record id="stmg_jamboree.entrenamiento12" model="stmg_jamboree.entrenamiento">
+      <field name="tipo">personal</field>
+      <field name="turno">2025-04-12 14:00</field>
+      <field name="sede_id" ref="stmg_jamboree.sede2"/>
+    </record>
+
+    <record id="stmg_jamboree.entrenamiento13" model="stmg_jamboree.entrenamiento">
+      <field name="tipo">infantil</field>
+      <field name="turno">2025-04-13 11:00</field>
+      <field name="sede_id" ref="stmg_jamboree.sede2"/>
+    </record>
+
+    <record id="stmg_jamboree.entrenamiento14" model="stmg_jamboree.entrenamiento">
+      <field name="tipo">desarrollo</field>
+      <field name="turno">2025-04-14 12:00</field>
+      <field name="sede_id" ref="stmg_jamboree.sede2"/>
+    </record>
+
+       <record id="stmg_jamboree.entrenamiento15" model="stmg_jamboree.entrenamiento">
+      <field name="tipo">infantil</field>
+      <field name="turno">2025-04-12 12:00</field>
+      <field name="sede_id" ref="stmg_jamboree.sede1"/>
+    </record>
+
+    <record id="stmg_jamboree.entrenamiento16" model="stmg_jamboree.entrenamiento">
+      <field name="tipo">desarrollo</field>
+      <field name="turno">2025-04-12 14:00</field>
+      <field name="sede_id" ref="stmg_jamboree.sede1"/>
+    </record>
+
+    <record id="stmg_jamboree.entrenamiento17" model="stmg_jamboree.entrenamiento">
+      <field name="tipo">personal</field>
+      <field name="turno">2025-04-13 11:00</field>
+      <field name="sede_id" ref="stmg_jamboree.sede1"/>
+    </record>
+
+    <record id="stmg_jamboree.entrenamiento18" model="stmg_jamboree.entrenamiento">
+      <field name="tipo">personal</field>
+      <field name="turno">2025-04-14 12:00</field>
+      <field name="sede_id" ref="stmg_jamboree.sede1"/>
+    </record>
+
+    <record id="stmg_jamboree.entrenamiento19" model="stmg_jamboree.entrenamiento">
+      <field name="tipo">infantil</field>
+      <field name="turno">2025-04-14 11:00</field>
+      <field name="sede_id" ref="stmg_jamboree.sede1"/>
+    </record>
+
+    <record id="stmg_jamboree.entrenamiento20" model="stmg_jamboree.entrenamiento">
+      <field name="tipo">desarrollo</field>
+      <field name="turno">2025-04-14 12:00</field>
+      <field name="sede_id" ref="stmg_jamboree.sede1"/>
+    </record>
+
+<!--//////////////// ENTRENAMIENTOS JUNIO ///////////////////-->
+
+    <record id="stmg_jamboree.entrenamiento21" model="stmg_jamboree.entrenamiento">
+      <field name="tipo">personal</field>
+      <field name="turno">2025-06-12 12:00</field>
+      <field name="sede_id" ref="stmg_jamboree.sede2"/>
+      <field name="capacidad" >12</field>
+    </record>
+
+    <record id="stmg_jamboree.entrenamiento22" model="stmg_jamboree.entrenamiento">
+      <field name="tipo">personal</field>
+      <field name="turno">2025-06-12 14:00</field>
+      <field name="sede_id" ref="stmg_jamboree.sede2"/>
+      <field name="capacidad" >12</field>
+    </record>
+
+    <record id="stmg_jamboree.entrenamiento23" model="stmg_jamboree.entrenamiento">
+      <field name="tipo">infantil</field>
+      <field name="turno">2025-06-13 11:00</field>
+      <field name="sede_id" ref="stmg_jamboree.sede2"/>
+      <field name="capacidad" >12</field>
+    </record>
+
+    <record id="stmg_jamboree.entrenamiento24" model="stmg_jamboree.entrenamiento">
+      <field name="tipo">desarrollo</field>
+      <field name="turno">2025-06-14 12:00</field>
+      <field name="sede_id" ref="stmg_jamboree.sede2"/>
+      <field name="capacidad" >12</field>
+    </record>
+
+       <record id="stmg_jamboree.entrenamiento25" model="stmg_jamboree.entrenamiento">
+      <field name="tipo">infantil</field>
+      <field name="turno">2025-06-12 12:00</field>
+      <field name="sede_id" ref="stmg_jamboree.sede1"/>
+      <field name="capacidad" >12</field>
+    </record>
+
+    <record id="stmg_jamboree.entrenamiento26" model="stmg_jamboree.entrenamiento">
+      <field name="tipo">desarrollo</field>
+      <field name="turno">2025-06-12 14:00</field>
+      <field name="sede_id" ref="stmg_jamboree.sede1"/>
+      <field name="capacidad" >12</field>
+    </record>
+
+    <record id="stmg_jamboree.entrenamiento27" model="stmg_jamboree.entrenamiento">
+      <field name="tipo">personal</field>
+      <field name="turno">2025-06-13 11:00</field>
+      <field name="sede_id" ref="stmg_jamboree.sede1"/>
+      <field name="capacidad" >12</field>
+    </record>
+
+    <record id="stmg_jamboree.entrenamiento28" model="stmg_jamboree.entrenamiento">
+      <field name="tipo">personal</field>
+      <field name="turno">2025-06-14 12:00</field>
+      <field name="sede_id" ref="stmg_jamboree.sede1"/>
+      <field name="capacidad" >12</field>
+    </record>
+
+    <record id="stmg_jamboree.entrenamiento29" model="stmg_jamboree.entrenamiento">
+      <field name="tipo">infantil</field>
+      <field name="turno">2025-06-14 11:00</field>
+      <field name="sede_id" ref="stmg_jamboree.sede1"/>
+      <field name="capacidad" >12</field>
+    </record>
+
+    <record id="stmg_jamboree.entrenamiento30" model="stmg_jamboree.entrenamiento">
+      <field name="tipo">desarrollo</field>
+      <field name="turno">2025-06-14 12:00</field>
+      <field name="sede_id" ref="stmg_jamboree.sede1"/>
+      <field name="capacidad" >12</field>
+    </record>
+
+    <!--//////////////// ENTRENADORES ///////////////////-->
+
+    <record id="stmg_jamboree.entrenador1" model="res.partner">
+      <field name="name">Mario Tortosa</field>
+      <field name="email">mtmg@jamboree.com</field>
+      <field name="phone">666999444</field>
+      <field name="is_entrenador" eval="True"/>
+      <field name="entrenamiento_ids" eval="[
+              Command.link(ref('stmg_jamboree.entrenamiento1')),
+              Command.link(ref('stmg_jamboree.entrenamiento2')),
+              Command.link(ref('stmg_jamboree.entrenamiento3')),
+              Command.link(ref('stmg_jamboree.entrenamiento4')),
+              Command.link(ref('stmg_jamboree.entrenamiento11')),
+              Command.link(ref('stmg_jamboree.entrenamiento12')),
+              Command.link(ref('stmg_jamboree.entrenamiento13')),
+              Command.link(ref('stmg_jamboree.entrenamiento14')),
+              Command.link(ref('stmg_jamboree.entrenamiento21')),
+              Command.link(ref('stmg_jamboree.entrenamiento22')),
+              Command.link(ref('stmg_jamboree.entrenamiento23')),
+              Command.link(ref('stmg_jamboree.entrenamiento24')),
+            ]"/>
+      <field name="image_1920" type="base64" file="stmg_jamboree/static/imgs/entrenador1.jpeg"/>
+    </record>
+
+    <record id="stmg_jamboree.entrenador2" model="res.partner">
+      <field name="name">Carlos García</field>
+      <field name="email">cgm@jamboree.com</field>
+      <field name="phone">666888777</field>
+      <field name="is_entrenador" eval="True"/>
+      <field name="entrenamiento_ids" eval="[
+              Command.link(ref('stmg_jamboree.entrenamiento5')),
+              Command.link(ref('stmg_jamboree.entrenamiento6')),
+              Command.link(ref('stmg_jamboree.entrenamiento7')),
+              Command.link(ref('stmg_jamboree.entrenamiento8')),
+              Command.link(ref('stmg_jamboree.entrenamiento9')),
+              Command.link(ref('stmg_jamboree.entrenamiento10')),
+              Command.link(ref('stmg_jamboree.entrenamiento15')),
+              Command.link(ref('stmg_jamboree.entrenamiento16')),
+              Command.link(ref('stmg_jamboree.entrenamiento17')),
+              Command.link(ref('stmg_jamboree.entrenamiento18')),
+              Command.link(ref('stmg_jamboree.entrenamiento19')),
+              Command.link(ref('stmg_jamboree.entrenamiento20')),
+              Command.link(ref('stmg_jamboree.entrenamiento25')),
+              Command.link(ref('stmg_jamboree.entrenamiento26')),
+              Command.link(ref('stmg_jamboree.entrenamiento27')),
+              Command.link(ref('stmg_jamboree.entrenamiento28')),
+              Command.link(ref('stmg_jamboree.entrenamiento29')),
+              Command.link(ref('stmg_jamboree.entrenamiento30')),
+            ]"/>
+      <field name="image_1920" type="base64" file="stmg_jamboree/static/imgs/entrenador2.jpeg"/>
+    </record>
+
+    <record id="stmg_jamboree.entrenador3" model="res.partner">
+      <field name="name">Jaime Moreno</field>
+      <field name="email">jmr@gmail.com</field>
+      <field name="phone">666777555</field>
+      <field name="is_entrenador" eval="True"/>
+      <field name="entrenamiento_ids" eval="[
+              Command.link(ref('stmg_jamboree.entrenamiento1')),
+              Command.link(ref('stmg_jamboree.entrenamiento4')),
+              Command.link(ref('stmg_jamboree.entrenamiento6')),
+              Command.link(ref('stmg_jamboree.entrenamiento9')),
+              Command.link(ref('stmg_jamboree.entrenamiento11')),
+              Command.link(ref('stmg_jamboree.entrenamiento14')),
+              Command.link(ref('stmg_jamboree.entrenamiento16')),
+              Command.link(ref('stmg_jamboree.entrenamiento19')),
+              Command.link(ref('stmg_jamboree.entrenamiento21')),
+              Command.link(ref('stmg_jamboree.entrenamiento24')),
+              Command.link(ref('stmg_jamboree.entrenamiento26')),
+              Command.link(ref('stmg_jamboree.entrenamiento29')),
+            ]"/>
+      <field name="image_1920" type="base64" file="stmg_jamboree/static/imgs/entrenador4.jpeg"/>
+    </record>
+
+
+    
+    </data>
+</odoo>

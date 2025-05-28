@@ -1,0 +1,50 @@
+<odoo>
+  <record id="view_partner_form_inherit_sincrocontacto" model="ir.ui.view">
+    <field name="name">res.partner.form.inherit.sincrocontacto</field>
+    <field name="model">res.partner</field>
+    <field name="inherit_id" ref="base.view_partner_form"/>
+    <field name="arch" type="xml">
+
+      <!-- Añadir botón inteligente -->
+      <xpath expr="//div[@class='oe_button_box']" position="inside">
+        <button name="%(stmg_jamboree.action_entrenamientos_relacionados)d"
+                type="action"
+                string="Entrenamientos"
+                class="oe_stat_button"
+                icon="fa-futbol-o"
+                context="{'default_entrenador_ids': [active_id]}"
+                invisible="is_entrenador == False">
+            <field name="entrenamiento_ids" widget="statinfo"/>
+        </button>
+      </xpath>
+      
+
+      <!-- Añadir campos de tutor y entrenador -->
+      <xpath expr="//sheet/group" position="inside">
+        <group string="Tutor">
+            <field name="is_tutor" string="Es Tutor" readonly="1"/>
+            <field name="id_tutor" string="ID Tutor"
+                   readonly="1"
+                   invisible="is_tutor == False"/>
+            
+            <field name="jugador_ids"
+                   string="Jugadores"
+                   widget="many2many_tags"
+                   invisible="is_tutor == False"/>
+            </group>
+            <group string="Entrenador">
+            <field name="is_entrenador" string="Es Entrenador"/>
+            
+                <field name="id_entrenador" string="ID Entrenador"
+                   readonly="1"
+                   invisible="is_entrenador == False"/>
+
+            <field name="entrenamiento_ids"
+                   string="Entrenamientos"
+                   widget="many2many_tags"
+                   invisible="is_entrenador == False"/>
+            </group>
+      </xpath>
+    </field>
+  </record>
+</odoo>

@@ -1,0 +1,13 @@
+<odoo>
+  <template id="stmg_portal_entrenamientos_tarjeta" inherit_id="portal.portal_my_home">
+    <xpath expr="//div[contains(@class, 'o_portal_docs')]" position="inside">
+        <t t-if="request.env.user.has_group('stmg_jamboree.stmg_group_entrenador')">
+            <div class="col-12 col-md-6 col-lg-4">
+                <a t-attf-href="/my/entrenamientos" class="btn btn-secondary w-100 mb-3">
+                    <i class="fa fa-futbol-o fa-2x me-2" aria-hidden="true"></i> Mis Entrenamientos
+                </a>
+            </div>
+        </t>
+    </xpath>
+  </template>
+</odoo>

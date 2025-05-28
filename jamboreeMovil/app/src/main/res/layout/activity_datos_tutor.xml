@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#6CBE8D"
+    tools:context=".actividades.DatosTutor">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="413dp"
+        android:layout_height="72dp"
+        android:background="#E162AA7E"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tabla">
+
+        <ImageButton
+            android:id="@+id/btSalirDat"
+            android:layout_width="65dp"
+            android:layout_height="53dp"
+            android:background="@drawable/salir"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/imageView"
+            app:layout_constraintHorizontal_bias="0.547"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="75dp"
+            android:layout_height="50dp"
+            android:background="@drawable/logo_oscuroescala_2x"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/btSalir"
+            android:layout_width="59dp"
+            android:layout_height="51dp"
+            android:background="@drawable/calendario"
+            android:clickable="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.518"
+            app:layout_constraintStart_toEndOf="@+id/imageView"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.476" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <EditText
+        android:id="@+id/nombre"
+        android:layout_width="227dp"
+        android:layout_height="58dp"
+        android:layout_marginEnd="12dp"
+        android:ems="10"
+        android:enabled="false"
+        android:fontFamily="@font/montserrat_medium"
+        android:hint="Nombre"
+        android:inputType="text"
+        android:textColor="#46555A"
+        android:textColorHint="#1A2A30"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.888" />
+
+    <EditText
+        android:id="@+id/numTel"
+        android:layout_width="227dp"
+        android:layout_height="58dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="16dp"
+        android:ems="10"
+        android:enabled="false"
+        android:fontFamily="@font/montserrat_medium"
+        android:hint="Teléfono"
+        android:inputType="phone"
+        android:textColor="#46555A"
+        android:textColorHint="#1A2A30"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/codPos"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="37dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="Cod. Postal"
+        android:textColor="#1A2A30"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView6"
+        app:layout_constraintEnd_toStartOf="@+id/codPos"
+        app:layout_constraintHorizontal_bias="0.294"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/ciudad"
+        android:layout_width="227dp"
+        android:layout_height="58dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="16dp"
+        android:ems="10"
+        android:enabled="false"
+        android:fontFamily="@font/montserrat_medium"
+        android:hint="Ciudad (Autocompletable)"
+        android:inputType="text"
+        android:textColor="#46555A"
+        android:textColorHint="#1A2A30"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/provincia"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="227dp"
+        android:layout_height="58dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="16dp"
+        android:ems="10"
+        android:enabled="false"
+        android:fontFamily="@font/montserrat_medium"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:textColor="#46555A"
+        android:textColorHint="#1A2A30"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/numTel"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/codPos"
+        android:layout_width="227dp"
+        android:layout_height="58dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="16dp"
+        android:ems="10"
+        android:enabled="false"
+        android:fontFamily="@font/montserrat_medium"
+        android:hint="Codigo Postal"
+        android:inputType="number"
+        android:textColor="#46555A"
+        android:textColorHint="#1A2A30"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/ciudad"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btGuardar"
+        android:layout_width="114dp"
+        android:layout_height="54dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#1A2A30"
+        android:enabled="false"
+        android:text="Guardar"
+        android:visibility="invisible"
+        app:cornerRadius="13dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pais"
+        app:layout_constraintVertical_bias="0.181" />
+
+    <Button
+        android:id="@+id/btCanc"
+        android:layout_width="114dp"
+        android:layout_height="54dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#1A2A30"
+        android:enabled="false"
+        android:text="Cancelar"
+        android:visibility="invisible"
+        app:cornerRadius="13dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btGuardar"
+        app:layout_constraintHorizontal_bias="0.912"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pais"
+        app:layout_constraintVertical_bias="0.181" />
+
+    <EditText
+        android:id="@+id/pais"
+        android:layout_width="227dp"
+        android:layout_height="58dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="208dp"
+        android:ems="10"
+        android:enabled="false"
+        android:fontFamily="@font/montserrat_medium"
+        android:hint="País (Autocompletable)"
+        android:inputType="text"
+        android:textColor="#46555A"
+        android:textColorHint="#1A2A30"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="36dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="Ciudad"
+        android:textColor="#1A2A30"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView11"
+        app:layout_constraintEnd_toStartOf="@+id/ciudad"
+        app:layout_constraintHorizontal_bias="0.113"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="Nombre"
+        android:textColor="#1A2A30"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView4"
+        app:layout_constraintEnd_toStartOf="@+id/nombre"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.812" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="36dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="Email"
+        android:textColor="#1A2A30"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView5"
+        app:layout_constraintEnd_toStartOf="@+id/email"
+        app:layout_constraintHorizontal_bias="0.122"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="36dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="Teléfono"
+        android:textColor="#1A2A30"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView7"
+        app:layout_constraintEnd_toStartOf="@+id/numTel"
+        app:layout_constraintHorizontal_bias="0.142"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="88dp"
+        android:layout_marginBottom="216dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="País"
+        android:textColor="#1A2A30"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/pais"
+        app:layout_constraintHorizontal_bias="0.275"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="Provincia"
+        android:textColor="#1A2A30"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView12"
+        app:layout_constraintEnd_toStartOf="@+id/provincia"
+        app:layout_constraintHorizontal_bias="0.145"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btMod"
+        android:layout_width="114dp"
+        android:layout_height="54dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#1A2A30"
+        android:enabled="true"
+        android:text="Modificar"
+        app:cornerRadius="13dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pais"
+        app:layout_constraintVertical_bias="0.181" />
+
+    <EditText
+        android:id="@+id/provincia"
+        android:layout_width="227dp"
+        android:layout_height="58dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="16dp"
+        android:ems="10"
+        android:enabled="false"
+        android:fontFamily="@font/montserrat_medium"
+        android:hint="Provincia (Autocompletable)"
+        android:inputType="text"
+        android:textColor="#46555A"
+        android:textColorHint="#1A2A30"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/pais"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="Datos del Tutor"
+        android:textColor="#1A2A30"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toTopOf="@+id/calendar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.308" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.10/dist/style.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.18.10/dist/browser/index.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.10/dist/index.js"></script><script>(r => {
+              setTimeout(r);
+            })(function renderToolbar() {
+  const {
+    markmap,
+    mm
+  } = window;
+  const {
+    el
+  } = markmap.Toolbar.create(mm);
+  el.setAttribute('style', 'position:absolute;bottom:20px;right:20px');
+  document.body.append(el);
+})</script><script>((getMarkmap, getOptions, root2, jsonOptions) => {
+              const markmap = getMarkmap();
+              window.mm = markmap.Markmap.create(
+                "svg#mindmap",
+                (getOptions || markmap.deriveOptions)(jsonOptions),
+                root2
+              );
+            })(() => window.markmap,null,{"content":"Conocimientos por m&#xf3;dulos","children":[{"content":"Programaci&#xf3;n - Acceso a Datos","children":[{"content":"Estructuras l&#xf3;gicas de programaci&#xf3;n","children":[],"payload":{"tag":"li","lines":"2,3"}},{"content":"Lectura de ficheros","children":[],"payload":{"tag":"li","lines":"3,4"}},{"content":"Manejo de estructuras de datos","children":[],"payload":{"tag":"li","lines":"4,5"}}],"payload":{"tag":"h2","lines":"1,2"}},{"content":"Procesos y servicios","children":[{"content":"Concurrencia","children":[{"content":"Reconocimiento de procesos asincronos en la API externa de Odoo","children":[],"payload":{"tag":"li","lines":"7,8"}},{"content":"Controlar el flujo de peticiones concurrentes","children":[],"payload":{"tag":"li","lines":"8,9"}}],"payload":{"tag":"h3","lines":"6,7"}},{"content":"Servicios","children":[{"content":"Protocolo Http","children":[],"payload":{"tag":"li","lines":"10,11"}},{"content":"Servidor web","children":[],"payload":{"tag":"li","lines":"11,12"}},{"content":"Cliente - Servidor","children":[],"payload":{"tag":"li","lines":"12,13"}}],"payload":{"tag":"h3","lines":"9,10"}}],"payload":{"tag":"h2","lines":"5,6"}},{"content":"Bases de Datos","children":[{"content":"Control de relaciones entre tablas","children":[],"payload":{"tag":"li","lines":"14,15"}},{"content":"Manejo de CRUD","children":[],"payload":{"tag":"li","lines":"15,16"}},{"content":"SQL","children":[],"payload":{"tag":"li","lines":"16,17"}}],"payload":{"tag":"h2","lines":"13,14"}},{"content":"Sistemas Inform&#xe1;ticos","children":[{"content":"Linux","children":[{"content":"Configuraci&#xf3;n de requisitos de la maquina AWS","children":[],"payload":{"tag":"li","lines":"19,20"}},{"content":"Instalaci&#xf3;n y configuraci&#xf3;n de paquetes Linux","children":[],"payload":{"tag":"li","lines":"20,21"}}],"payload":{"tag":"h3","lines":"18,19"}},{"content":"Redes","children":[{"content":"DNS","children":[],"payload":{"tag":"li","lines":"22,23"}},{"content":"Acceso a AWS por diferentes puertos","children":[],"payload":{"tag":"li","lines":"23,24"}}],"payload":{"tag":"h3","lines":"21,22"}}],"payload":{"tag":"h2","lines":"17,18"}},{"content":"Entornos de Desarrollo","children":[{"content":"Git","children":[{"content":"Merge","children":[],"payload":{"tag":"li","lines":"26,27"}},{"content":"Checkout","children":[],"payload":{"tag":"li","lines":"27,28"}},{"content":"Pull/Push","children":[],"payload":{"tag":"li","lines":"28,29"}}],"payload":{"tag":"h3","lines":"25,26"}},{"content":"Diagramas","children":[{"content":"Diagrama de usos","children":[],"payload":{"tag":"li","lines":"30,31"}},{"content":"Diagrama de clases","children":[],"payload":{"tag":"li","lines":"31,32"}},{"content":"Diagrama de flujo","children":[],"payload":{"tag":"li","lines":"32,33"}}],"payload":{"tag":"h3","lines":"29,30"}},{"content":"Metodolog&#xed;a de trabajo","children":[{"content":"Ciclo de Software en Espiral, entrevistas continuas","children":[],"payload":{"tag":"li","lines":"34,35"}},{"content":"SCRUM","children":[],"payload":{"tag":"li","lines":"35,36"}}],"payload":{"tag":"h3","lines":"33,34"}}],"payload":{"tag":"h2","lines":"24,25"}},{"content":"Lenguajes de Marcas","children":[{"content":"XML","children":[],"payload":{"tag":"li","lines":"37,38"}},{"content":"CSS","children":[],"payload":{"tag":"li","lines":"38,39"}},{"content":"JSON","children":[],"payload":{"tag":"li","lines":"39,40"}}],"payload":{"tag":"h2","lines":"36,37"}},{"content":"Sistemas de Gesti&#xf3;n Empresarial","children":[{"content":"Python","children":[],"payload":{"tag":"li","lines":"41,42"}},{"content":"Odoo","children":[],"payload":{"tag":"li","lines":"42,43"}},{"content":"API externa de Odoo","children":[],"payload":{"tag":"li","lines":"43,44"}},{"content":"GitHub","children":[],"payload":{"tag":"li","lines":"44,45"}},{"content":"Docker","children":[],"payload":{"tag":"li","lines":"45,46"}}],"payload":{"tag":"h2","lines":"40,41"}},{"content":"Programaci&#xf3;n multimedia y dispositivos m&#xf3;viles","children":[{"content":"Entorno","children":[{"content":"Kotlin","children":[],"payload":{"tag":"li","lines":"48,49"}},{"content":"Android Studio","children":[],"payload":{"tag":"li","lines":"49,50"}}],"payload":{"tag":"h3","lines":"47,48"}},{"content":"Interfaz","children":[{"content":"Layouts","children":[],"payload":{"tag":"li","lines":"51,52"}},{"content":"Constrains","children":[],"payload":{"tag":"li","lines":"52,53"}}],"payload":{"tag":"h3","lines":"50,51"}}],"payload":{"tag":"h2","lines":"46,47"}},{"content":"Desarrollo de Interfaces","children":[{"content":"MVC","children":[],"payload":{"tag":"li","lines":"54,55"}},{"content":"Usabilidad","children":[],"payload":{"tag":"li","lines":"55,56"}},{"content":"Flujo entre ventanas","children":[],"payload":{"tag":"li","lines":"56,57"}}],"payload":{"tag":"h2","lines":"53,54"}},{"content":"Ingles Tecnico","children":[{"content":"Consulta de documentaci&#xf3;n","children":[],"payload":{"tag":"li","lines":"58,59"}},{"content":"Videotutoriales en ingl&#xe9;s","children":[],"payload":{"tag":"li","lines":"59,60"}}],"payload":{"tag":"h2","lines":"57,58"}},{"content":"Formaci&#xf3;n y orientaci&#xf3;n laboral - Empresa e iniciativa emprendedora","children":[{"content":"Administraci&#xf3;n financiera","children":[],"payload":{"tag":"li","lines":"61,62"}},{"content":"Recursos Humanos","children":[],"payload":{"tag":"li","lines":"62,63"}},{"content":"Reconocimiento de necesidades empresariales","children":[],"payload":{"tag":"li","lines":"63,64"}}],"payload":{"tag":"h2","lines":"60,61"}}],"payload":{"tag":"h1","lines":"0,1"}},{})</script>
+</body>
+</html>

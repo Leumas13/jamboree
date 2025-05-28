@@ -1,0 +1,15 @@
+<odoo noupdate = "0">
+    <!-- Grupo: Tutor -->
+    <!-- Grupo: Entrenador -->
+    <record id="stmg_group_entrenador" model="res.groups">
+        <field name="name">stmg_Entrenador</field>
+        <field name="category_id" ref="base.module_category_hidden"/>
+    </record>
+
+    <!-- Grupo: Administrador -->
+    <record id="stmg_group_administrador_escuela" model="res.groups">
+        <field name="name">stmg_Administrador</field>
+        <field name="category_id" ref="base.module_category_hidden"/>
+    </record>
+
+</odoo>
