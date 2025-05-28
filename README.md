@@ -1,24 +1,16 @@
-<p align="center">
-  <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=git,kubernetes,docker,c,vim" />
-  </a>
-</p>
-
 # Ecosistema Jamboree
 
-**Jamboree** es un ecosistema digital desarrollado como proyecto final de un Ciclo Formativo de Grado Superior, basado en la plataforma **Odoo**. El sistema implementa una arquitectura modular, entornos diferenciados para desarrollo y producción, herramientas para la migración de datos desde sistemas legados, una aplicación externa para la consulta de información mediante la API de Odoo, y una aplicación móvil para acceso remoto.
-
----
+![Logo Jamboree](images/mi_imagen.png)
 
 ## 📦 Descripción General
 
 El ecosistema está compuesto por los siguientes componentes principales:
 
 - **Odoo personalizado**: módulo específico adaptado a las necesidades de Jamboree.
-- **Entornos de desarrollo y producción**: configurados mediante Docker y Docker Compose.
-- **Migración de datos**: herramientas y pruebas para importar información desde sistemas anteriores.
-- **Aplicación API externa**: conexión con Odoo mediante REST para consulta de datos.
-- **Aplicación móvil**: acceso a funcionalidades clave desde dispositivos móviles.
+- **Entornos de desarrollo y producción**: configurados mediante Docker Compose y alojados en AWS.
+- **Migración de datos**: herramientas y pruebas para importar información desde ficheros csv a Odoo.
+- **Aplicación API externa**: conexión con Odoo mediante JSON-RPC2 para consulta de datos.
+- **Aplicación móvil**: acceso a funcionalidades clave del cliente de Jamboree desde dispositivos móviles Android.
 
 ---
 
@@ -46,6 +38,14 @@ jamboree/
 ├── webAnexos/                      # Documentación adicional (mapa, Gantt, etc.)
 └── README.md                       # Este archivo
 ```
+---
+
+## 🚀 Tecnologías utilizadas
+<p align="center">
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=androidstudio,aws,bash,docker,github,kotlin,nginx,postgres,postman,py,ubuntuvscode," />
+  </a>
+</p>
 
 ---
 
@@ -56,31 +56,6 @@ jamboree/
 - Python 3 (para pruebas con notebooks y scripts)
 - Entorno de desarrollo móvil (para `jamboreeMovil`)
 
----
-
-## 🚀 Instrucciones Básicas
-
-### Desarrollar en Odoo
-
-```bash
-cd odooDesarrollo
-docker-compose up --build
-```
-
-### Producción
-
-```bash
-cd odooProduccion
-docker-compose up -d
-```
-
-### Migración de Datos
-
-Ejecutar el notebook `pruebaApi.ipynb` en `migrarJamboree/` para comprobar la conectividad con la API y simular carga de datos desde CSV.
-
-### Aplicación Móvil
-
-Abrir el proyecto en el entorno de desarrollo correspondiente (ej. Android Studio) y ejecutar en emulador o dispositivo físico.
 
 ---
 
