@@ -1,7 +1,7 @@
-# Ecosistema Jamboree
 
 ![Logo Jamboree](webAnexos/logo.png)
 
+# Ecosistema Jamboree
 ## 📦 Descripción General
 
 El ecosistema está compuesto por los siguientes componentes principales:
