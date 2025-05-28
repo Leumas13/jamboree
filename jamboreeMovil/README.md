@@ -2,9 +2,9 @@
 
 Este directorio contiene el código fuente de la aplicación móvil desarrollada para interactuar con el sistema Odoo mediante su API externa.
 <p align="center">
-  <img src="recursosReadme/login.jpeg" alt="Login de app" width="200"/>
-  <img src="recursosReadme/calendario.jpeg" alt="Vista de calendario" width="200"/>
-  <img src="recursosReadme/datos.jpeg" alt="Vista de datos" width="200"/>
+  <img src="recursosReadme/login.jpeg" alt="Login de app" width="300"/>
+  <img src="recursosReadme/calendario.jpeg" alt="Vista de calendario" width="300"/>
+  <img src="recursosReadme/datos.jpeg" alt="Vista de datos" width="300"/>
 </p>
 ## Funcionalidad
 
