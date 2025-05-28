@@ -25,7 +25,6 @@ El sistema está compuesto por los siguientes componentes principales:
 
 ## 📁 Estructura del Proyecto
 
-```plaintext
 jamboree/
 ├── index.html                      # Página de presentación de Anexos [web de anexos](https://leumas13.github.io/jamboree/)
 ├── migrarJamboree/                 # Scripts y datos para la migración de csv a Odoo
@@ -34,4 +33,4 @@ jamboree/
 ├── jamboreeMovil/                  # Aplicación móvil conectada a Odoo
 ├── webAnexos/                      # Documentación adicional (mapa, Gantt, etc.)
 └── README.md                       
-```
+
