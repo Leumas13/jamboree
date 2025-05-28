@@ -2,7 +2,7 @@
 
 Este directorio contiene el entorno de desarrollo de Odoo para el sistema Jamboree.
 
-## Estructura de personalización
+## Estructura de la personalización de Odoo
 
 ```plaintext
 jamboree/odooDesarrollo/odoo/addons
