@@ -4,14 +4,8 @@ Este directorio contiene archivos de prueba utilizados para la migración de dat
 
 ## Archivos Incluidos
 
-- `pruebaBD.csv`: Datos de prueba para migración de entidades principales.
-- `pruebaBDTutor.csv`: Datos adicionales para entidades relacionadas.
-- `pruebaApi.ipynb`: Notebook en Jupyter con pruebas de conexión a la API REST de Odoo.
+- `pruebaBD.csv`: Extracción de jugadores con datos de demo respetando la estructura del csv original
+- `pruebaBDTutor.csv`: Extracción de tutores con datos demo respetando la estructura del csv original
+- `pruebaApi.ipynb`: Notebook en Jupyter con el resultado de la migración a través de la API externa de Odoo.
 
-## Requisitos
 
-- Python 3
-- Jupyter Notebook
-- Requests (u otra librería HTTP para trabajar con APIs)
-
-Este entorno está diseñado para probar el proceso de integración y validación de datos migrados desde sistemas anteriores hacia el nuevo entorno Odoo.
