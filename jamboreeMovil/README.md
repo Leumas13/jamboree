@@ -5,8 +5,9 @@ Este directorio contiene el código fuente de la aplicación móvil desarrollada
   <img src="recursosReadme/login.jpeg" alt="Login de app" width="300"/>
   <img src="recursosReadme/calendario.jpeg" alt="Vista de calendario" width="300"/>
   <img src="recursosReadme/datos.jpeg" alt="Vista de datos" width="300"/>
-  <video width="300" controls>
+  <video width="300" controls autoplay loop>
   <source src="recursosReadme/video.mp4" type="video/mp4">
+  <p>cagarro</p>
 </video>
 </p>
 
