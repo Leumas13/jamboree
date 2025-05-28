@@ -14,32 +14,6 @@ El ecosistema está compuesto por los siguientes componentes principales:
 
 ---
 
-## 📁 Estructura del Proyecto
-
-```plaintext
-jamboree/
-├── index.html                       # Página de presentación (anexo)
-├── migrarJamboree/                 # Scripts y datos para pruebas de migración
-│   ├── pruebaBD.csv
-│   ├── pruebaBDTutor.csv
-│   └── pruebaApi.ipynb
-│   └── README.md
-├── odooDesarrollo/                 # Entorno de desarrollo con módulos personalizados
-│   ├── docker-compose.yml
-│   ├── addons/
-│   ├── DiagramaClases/
-│   └── README.md
-├── odooProduccion/                 # Configuración para entorno de producción
-│   ├── docker-compose.yml
-│   └── README.md
-├── jamboreeMovil/                  # Aplicación móvil conectada a Odoo
-│   ├── código fuente
-│   └── README.md
-├── webAnexos/                      # Documentación adicional (mapa, Gantt, etc.)
-└── README.md                       # Este archivo
-```
----
-
 ## 🚀 Tecnologías utilizadas
 <p align="center">
   <a href="https://skillicons.dev">
@@ -49,14 +23,18 @@ jamboree/
 
 ---
 
-## ⚙️ Requisitos Generales
+## 📁 Estructura del Proyecto
 
-- Docker
-- Docker Compose
-- Python 3 (para pruebas con notebooks y scripts)
-- Entorno de desarrollo móvil (para `jamboreeMovil`)
-
-
+```plaintext
+jamboree/
+├── index.html                      # Página de presentación de Anexos
+├── migrarJamboree/                 # Scripts y datos para la migración de csv a Odoo
+├── odooDesarrollo/                 # Entorno de desarrollo con módulos personalizados
+├── odooProduccion/                 # Configuración para entorno de producción
+├── jamboreeMovil/                  # Aplicación móvil conectada a Odoo
+├── webAnexos/                      # Documentación adicional (mapa, Gantt, etc.)
+└── README.md                       
+```
 ---
 
 ## 📄 Licencia
