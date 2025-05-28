@@ -7,7 +7,8 @@ Este directorio contiene el código fuente de la aplicación móvil desarrollada
   <img src="recursosReadme/datos.jpeg" alt="Vista de datos" width="300"/>
 </p>
 
-🎬 [Ver demostración en video](recursosReadme/video.mp4)
+[![Ver demostración en video](https://img.youtube.com/vi/B974I8024Qg/0.jpg)](https://youtube.com/shorts/B974I8024Qg?feature=share)
+
 
 ## Funcionalidad
 
