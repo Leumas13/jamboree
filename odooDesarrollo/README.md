@@ -3,7 +3,8 @@
 Este directorio contiene el entorno de desarrollo de Odoo para el sistema Jamboree.
 
 ## Estructura de personalización
-'''plaintext
+
+```plaintext
 jamboree/odooDesarrollo/odoo/addons
 ├── base_location/                                # Dependencia de l10n_es_toponyms
 ├── base_location_geonames_import/                # Dependencia de l10n_es_toponyms
@@ -45,4 +46,4 @@ jamboree/odooDesarrollo/odoo/addons
 ├── \_\_manifest__.py                             # Fichero de configuración del módulo
 ├── hooks.py                                      # Script con los métodos que deben ser lanzados inmediatamente despues de instalar el módulo
 ├── web_company_color/                            # Raiz de módulo de terceros para personalizar los colores de Odoo
-'''
+```
