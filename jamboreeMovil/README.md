@@ -1,9 +1,9 @@
 # Aplicación Móvil - Jamboree
 
 Este directorio contiene el código fuente de la aplicación móvil desarrollada para interactuar con el sistema Odoo mediante su API externa.
-![Login de app](jamboreeMovil/recursosReadme/login.jpeg)
-![Vista de calendario](jamboreeMovil/recursosReadme/calendario.jpeg)
-![Vista de datos](jamboreeMovil/recursosReadme/datos.jpeg)
+![Login de app](recursosReadme/login.jpeg)
+![Vista de calendario](recursosReadme/calendario.jpeg)
+![Vista de datos](recursosReadme/datos.jpeg)
 ## Funcionalidad
 
 - Consulta de entrenamientos.
