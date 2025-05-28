@@ -27,7 +27,7 @@ El sistema está compuesto por los siguientes componentes principales:
 
 ```plaintext
 jamboree/
-├── index.html                      # Página de presentación de Anexos
+├── index.html                      # Página de presentación de Anexos [web de anexos](https://leumas13.github.io/jamboree/)
 ├── migrarJamboree/                 # Scripts y datos para la migración de csv a Odoo
 ├── odooDesarrollo/                 # Entorno de desarrollo con módulos personalizados
 ├── odooProduccion/                 # Configuración para entorno de producción
