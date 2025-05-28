@@ -1,6 +1,6 @@
 # Ecosistema Jamboree
 
-![Logo Jamboree](images/mi_imagen.png)
+![Logo Jamboree](webAnexos/logo.png)
 
 ## 📦 Descripción General
 
