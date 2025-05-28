@@ -1,6 +1,6 @@
 # Entorno de Desarrollo Odoo - Jamboree
 
-Este directorio contiene el entorno de desarrollo basado en Docker para el ecosistema Jamboree, junto con los módulos personalizados desarrollados para Odoo.
+Este directorio contiene el entorno de desarrollo de Odoo para el sistema Jamboree.
 
 ## Estructura
 
