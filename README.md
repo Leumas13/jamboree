@@ -1,10 +1,10 @@
 
 ![Logo Jamboree](webAnexos/logo.png)
 
-# Ecosistema empresarial para Jamboree
+# Sistema empresarial para Jamboree
 ## 📦 Descripción General
 
-El ecosistema está compuesto por los siguientes componentes principales:
+El sistema está compuesto por los siguientes componentes principales:
 
 - **Odoo personalizado**: módulo específico adaptado a las necesidades de Jamboree.
 - **Entornos de desarrollo y producción**: configurados mediante Docker Compose y alojados en AWS.
@@ -23,11 +23,10 @@ El ecosistema está compuesto por los siguientes componentes principales:
 
 ---
 
-## 📁 Estructura del Proyecto
-
-```plaintext
+## 📁 Estructura del Proyecto [web de anexos](https://leumas13.github.io/jamboree/)
+```
 jamboree/
-├── index.html                      # Página de presentación de Anexos
+├── index.html                      # Página de presentación de Anexos 
 ├── migrarJamboree/                 # Scripts y datos para la migración de csv a Odoo
 ├── odooDesarrollo/                 # Entorno de desarrollo con módulos personalizados
 ├── odooProduccion/                 # Configuración para entorno de producción
