@@ -35,8 +35,3 @@ jamboree/
 ├── webAnexos/                      # Documentación adicional (mapa, Gantt, etc.)
 └── README.md                       
 ```
----
-
-## 📄 Licencia
-
-Este proyecto está distribuido bajo la licencia MIT.
