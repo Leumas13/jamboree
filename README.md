@@ -1,3 +1,9 @@
+<p align="center">
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=git,kubernetes,docker,c,vim" />
+  </a>
+</p>
+
 # Ecosistema Jamboree
 
 **Jamboree** es un ecosistema digital desarrollado como proyecto final de un Ciclo Formativo de Grado Superior, basado en la plataforma **Odoo**. El sistema implementa una arquitectura modular, entornos diferenciados para desarrollo y producción, herramientas para la migración de datos desde sistemas legados, una aplicación externa para la consulta de información mediante la API de Odoo, y una aplicación móvil para acceso remoto.
