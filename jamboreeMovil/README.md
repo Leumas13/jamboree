@@ -5,7 +5,11 @@ Este directorio contiene el código fuente de la aplicación móvil desarrollada
   <img src="recursosReadme/login.jpeg" alt="Login de app" width="300"/>
   <img src="recursosReadme/calendario.jpeg" alt="Vista de calendario" width="300"/>
   <img src="recursosReadme/datos.jpeg" alt="Vista de datos" width="300"/>
+  <video width="300" controls>
+  <source src="recursosReadme/video.mp4" type="video/mp4">
+</video>
 </p>
+
 ## Funcionalidad
 
 - Consulta de entrenamientos.
@@ -14,17 +18,7 @@ Este directorio contiene el código fuente de la aplicación móvil desarrollada
 
 ## Tecnologías Utilizadas
 
-- Framework de desarrollo móvil (especificar si es Flutter, React Native, etc.)
-- REST API
-- JSON
-
-## Requisitos
-
-- Entorno de desarrollo móvil configurado (Android Studio, Xcode, etc.)
-- Conexión a un servidor Odoo activo con API habilitada
-
-## Ejecución
-
-1. Abrir el proyecto en el entorno de desarrollo.
-2. Configurar la URL de la API si es necesario.
-3. Ejecutar en un emulador o dispositivo físico.
+- Kotlin
+- XML
+- JSON-RPC2
+- API externa de Odoo
