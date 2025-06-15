@@ -162,70 +162,70 @@
 
     <record id="stmg_jamboree.entrenamiento21" model="stmg_jamboree.entrenamiento">
       <field name="tipo">personal</field>
-      <field name="turno">2025-06-12 12:00</field>
+      <field name="turno">2025-06-22 12:00</field>
       <field name="sede_id" ref="stmg_jamboree.sede2"/>
       <field name="capacidad" >12</field>
     </record>
 
     <record id="stmg_jamboree.entrenamiento22" model="stmg_jamboree.entrenamiento">
       <field name="tipo">personal</field>
-      <field name="turno">2025-06-12 14:00</field>
+      <field name="turno">2025-06-22 14:00</field>
       <field name="sede_id" ref="stmg_jamboree.sede2"/>
       <field name="capacidad" >12</field>
     </record>
 
     <record id="stmg_jamboree.entrenamiento23" model="stmg_jamboree.entrenamiento">
       <field name="tipo">infantil</field>
-      <field name="turno">2025-06-13 11:00</field>
+      <field name="turno">2025-06-23 11:00</field>
       <field name="sede_id" ref="stmg_jamboree.sede2"/>
       <field name="capacidad" >12</field>
     </record>
 
     <record id="stmg_jamboree.entrenamiento24" model="stmg_jamboree.entrenamiento">
       <field name="tipo">desarrollo</field>
-      <field name="turno">2025-06-14 12:00</field>
+      <field name="turno">2025-06-24 12:00</field>
       <field name="sede_id" ref="stmg_jamboree.sede2"/>
       <field name="capacidad" >12</field>
     </record>
 
        <record id="stmg_jamboree.entrenamiento25" model="stmg_jamboree.entrenamiento">
       <field name="tipo">infantil</field>
-      <field name="turno">2025-06-12 12:00</field>
+      <field name="turno">2025-06-22 12:00</field>
       <field name="sede_id" ref="stmg_jamboree.sede1"/>
       <field name="capacidad" >12</field>
     </record>
 
     <record id="stmg_jamboree.entrenamiento26" model="stmg_jamboree.entrenamiento">
       <field name="tipo">desarrollo</field>
-      <field name="turno">2025-06-12 14:00</field>
+      <field name="turno">2025-06-22 14:00</field>
       <field name="sede_id" ref="stmg_jamboree.sede1"/>
       <field name="capacidad" >12</field>
     </record>
 
     <record id="stmg_jamboree.entrenamiento27" model="stmg_jamboree.entrenamiento">
       <field name="tipo">personal</field>
-      <field name="turno">2025-06-13 11:00</field>
+      <field name="turno">2025-06-23 11:00</field>
       <field name="sede_id" ref="stmg_jamboree.sede1"/>
       <field name="capacidad" >12</field>
     </record>
 
     <record id="stmg_jamboree.entrenamiento28" model="stmg_jamboree.entrenamiento">
       <field name="tipo">personal</field>
-      <field name="turno">2025-06-14 12:00</field>
+      <field name="turno">2025-06-24 12:00</field>
       <field name="sede_id" ref="stmg_jamboree.sede1"/>
       <field name="capacidad" >12</field>
     </record>
 
     <record id="stmg_jamboree.entrenamiento29" model="stmg_jamboree.entrenamiento">
       <field name="tipo">infantil</field>
-      <field name="turno">2025-06-14 11:00</field>
+      <field name="turno">2025-06-24 11:00</field>
       <field name="sede_id" ref="stmg_jamboree.sede1"/>
       <field name="capacidad" >12</field>
     </record>
 
     <record id="stmg_jamboree.entrenamiento30" model="stmg_jamboree.entrenamiento">
       <field name="tipo">desarrollo</field>
-      <field name="turno">2025-06-14 12:00</field>
+      <field name="turno">2025-06-24 12:00</field>
       <field name="sede_id" ref="stmg_jamboree.sede1"/>
       <field name="capacidad" >12</field>
     </record>
