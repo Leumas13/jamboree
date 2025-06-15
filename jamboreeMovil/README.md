@@ -2,7 +2,7 @@
 
 Este directorio contiene el código fuente de la aplicación móvil desarrollada para interactuar con el sistema Odoo mediante su API externa.
 
-[Ver demostración en video](https://youtu.be/uK7xOFUOT3Q)
+[Ver demostración en video](https://youtu.be/MgHHIH1nByk)
 
 <p align="center">
   <img src="recursosReadme/login.jpeg" alt="Login de app" width="300"/>
